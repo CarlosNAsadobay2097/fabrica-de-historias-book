@@ -1,0 +1,147 @@
+{
+  "name": "librovirtualdemo2",
+  "source": "LibroVirtualDemo2.pdf",
+  "pages": 4,
+  "format": "webp",
+  "scale": 2,
+  "quality": 85,
+  "generated": "2026-03-28T00:39:25.293Z",
+  "basePath": "/pages/librovirtualdemo2",
+  "overlays": {
+    "1": [
+      {
+        "id": "e37abc52-50a1-42b9-b926-c5eda12708fe",
+        "type": "button",
+        "x": 21.777777777777775,
+        "y": 43.02335330304551,
+        "w": 8,
+        "h": 5.337781484570475,
+        "visible": true,
+        "clickable": true,
+        "action": "toggleTarget",
+        "icon": "🔊",
+        "src": "/pages/librovirtualdemo2/assets/images/1789335213990-Boton.webp",
+        "targetIds": [
+          "04e1c55c-b245-497e-9ccf-9dad98655187"
+        ]
+      },
+      {
+        "id": "9a012de3-8ca6-425f-9dbf-cc8b0d0d67e9",
+        "type": "button",
+        "x": 22,
+        "y": 22,
+        "w": 8,
+        "h": 8,
+        "visible": true,
+        "clickable": true,
+        "action": "playAudio",
+        "icon": "🔊"
+      },
+      {
+        "id": "df8c02fe-8b3b-49e7-96fe-cb0f56b1bd59",
+        "type": "button",
+        "x": 29,
+        "y": 29,
+        "w": 8,
+        "h": 8,
+        "visible": true,
+        "clickable": true,
+        "action": "playAudio",
+        "icon": "🔊"
+      },
+      {
+        "id": "04e1c55c-b245-497e-9ccf-9dad98655187",
+        "type": "image",
+        "x": 44.111111111111114,
+        "y": 34.1651376146789,
+        "w": 20,
+        "h": 20,
+        "visible": true,
+        "clickable": true,
+        "action": "none",
+        "src": "/pages/librovirtualdemo2/assets/images/1789333476189-Nico_Gif.gif"
+      }
+    ],
+    "2": [
+      {
+        "id": "4a488c09-fde2-4104-b283-b36ed52ec529",
+        "type": "button",
+        "x": 36.888888888888886,
+        "y": 26.40533829053508,
+        "w": 13.111111111111112,
+        "h": 15.512927439532945,
+        "visible": true,
+        "clickable": true,
+        "action": "timedSwap",
+        "icon": "🔊",
+        "src": "/pages/librovirtualdemo2/assets/images/1789335916368-Boton_Animacion.webp",
+        "audioSrc": "/pages/librovirtualdemo2/assets/audio/1789336201604-Jejeje__risa_final_.ogg",
+        "durationMs": 4000,
+        "targetIds": [
+          "abd5ebee-0c3e-42ed-880c-ed09af2ecec6"
+        ]
+      },
+      {
+        "id": "abd5ebee-0c3e-42ed-880c-ed09af2ecec6",
+        "type": "image",
+        "x": 30.666666666666664,
+        "y": 23.334445269332516,
+        "w": 21.777777777777775,
+        "h": 22.602168473728106,
+        "visible": false,
+        "clickable": true,
+        "action": "none",
+        "src": "/pages/librovirtualdemo2/assets/images/1789335944641-Nico_el_loro_Tesoro.webp"
+      }
+    ],
+    "3": [
+      {
+        "id": "1be30e3b-5a28-499e-bd06-175df86f070e",
+        "type": "button",
+        "x": 15,
+        "y": 15,
+        "w": 8,
+        "h": 8,
+        "visible": true,
+        "clickable": true,
+        "action": "playAudio",
+        "icon": "🔊"
+      },
+      {
+        "id": "c1d21999-4ddc-4502-a14d-5dac6b4f35ff",
+        "type": "image",
+        "x": 22,
+        "y": 21.9999998981899,
+        "w": 20.333333333333332,
+        "h": 13.344453711426189,
+        "visible": true,
+        "clickable": true,
+        "action": "none",
+        "src": "/pages/librovirtualdemo2/assets/images/1789333499230-ezgif.com-webp-maker.webp"
+      },
+      {
+        "id": "5939910a-3b10-4de4-9f26-73396da686e0",
+        "type": "image",
+        "x": 45.88888888888889,
+        "y": 58.798999165971644,
+        "w": 54.11111111111111,
+        "h": 41.201000834028356,
+        "visible": true,
+        "clickable": true,
+        "action": "none",
+        "src": "/pages/librovirtualdemo2/assets/images/1789333519564-Montana_webP.webp"
+      },
+      {
+        "id": "6ddd6635-234e-4f8f-a55b-4c1b9116aabc",
+        "type": "image",
+        "x": 57.111111111111114,
+        "y": 43.67306088407006,
+        "w": 20,
+        "h": 20,
+        "visible": false,
+        "clickable": true,
+        "action": "none"
+      }
+    ]
+  }
+}

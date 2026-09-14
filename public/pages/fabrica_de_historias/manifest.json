@@ -1,0 +1,169 @@
+{
+  "name": "fabrica_de_historias",
+  "source": "fabrica_de_historias.pdf",
+  "pages": 68,
+  "format": "webp",
+  "scale": 2,
+  "quality": 85,
+  "generated": "2026-09-13T22:35:51.309Z",
+  "basePath": "/pages/fabrica_de_historias",
+  "overlays": {
+    "18": [
+      {
+        "id": "42e24497-7f00-41e5-b4a5-c09481bd9210",
+        "type": "image",
+        "x": 23.333333333333332,
+        "y": 45.52543582868536,
+        "w": 61.77777777777778,
+        "h": 51.37614678899083,
+        "visible": true,
+        "clickable": true,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789339252418-Dragon_morado_webP.webp"
+      }
+    ],
+    "19": [
+      {
+        "id": "8526db6a-ea41-42bf-8946-98d3f9eb82dc",
+        "type": "image",
+        "x": 45.666666666666664,
+        "y": 52.03085955825818,
+        "w": 34.77777777777778,
+        "h": 35.446205170975816,
+        "visible": false,
+        "clickable": true,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789339745986-Boboth_jugando_1_webP.webp"
+      },
+      {
+        "id": "90f4d2f4-e5b3-4ff2-a166-4c4d4766bcd9",
+        "type": "image",
+        "x": 73.11111111111111,
+        "y": 64.45204326766446,
+        "w": 20,
+        "h": 17.01417848206839,
+        "visible": false,
+        "clickable": true,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789339776404-Corazon_webP.webp"
+      },
+      {
+        "id": "c7476787-90d0-436a-a97f-d89658031806",
+        "type": "image",
+        "x": 4.4444444444444455,
+        "y": 48.18265404275699,
+        "w": 52.888888888888886,
+        "h": 39.366138448707254,
+        "visible": false,
+        "clickable": true,
+        "action": "none",
+        "audioSrc": "/pages/fabrica_de_historias/assets/images/1789339804294-Dragon_morado_jugando_webP.webp",
+        "src": "/pages/fabrica_de_historias/assets/images/1789339817219-Dragon_morado_jugando_webP.webp"
+      },
+      {
+        "id": "444deda7-46fe-422b-9b2d-04319624a5ad",
+        "type": "button",
+        "x": 72.87110731336806,
+        "y": 65.76091766357422,
+        "w": 19.666666666666664,
+        "h": 13.666666666666666,
+        "visible": true,
+        "clickable": true,
+        "action": "timedSwap",
+        "icon": "🔊",
+        "src": "/pages/fabrica_de_historias/assets/images/1789339982416-Corazon_button.webp",
+        "targetIds": [
+          "90f4d2f4-e5b3-4ff2-a166-4c4d4766bcd9"
+        ],
+        "durationMs": 2000
+      },
+      {
+        "id": "0cf48d14-871e-4e9d-aac6-635226b62645",
+        "type": "image",
+        "x": 80.77777777777779,
+        "y": 72.44120415694721,
+        "w": 19.22222222222222,
+        "h": 18.682235195996665,
+        "visible": true,
+        "clickable": true,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789340054815-Oso.webp"
+      },
+      {
+        "id": "b1594162-3fe1-4b70-813e-7e2c4189514c",
+        "type": "button",
+        "x": 3.888888888888889,
+        "y": 48.33194328607173,
+        "w": 54.22222222222223,
+        "h": 39.28273561301084,
+        "visible": true,
+        "clickable": true,
+        "action": "timedSwap",
+        "icon": "🔊",
+        "src": "/pages/fabrica_de_historias/assets/images/1789340205655-Dragon_Morado_Button.webp",
+        "targetIds": [
+          "c7476787-90d0-436a-a97f-d89658031806"
+        ],
+        "durationMs": 4000
+      },
+      {
+        "id": "117265a3-5b11-45ee-be99-544636a9fdd2",
+        "type": "button",
+        "x": 50.87110731336806,
+        "y": 55.9380849202474,
+        "w": 24.444444444444443,
+        "h": 27.666666666666668,
+        "visible": true,
+        "clickable": true,
+        "action": "timedSwap",
+        "icon": "🔊",
+        "src": "/pages/fabrica_de_historias/assets/images/1789340316443-Robot_Button.webp",
+        "durationMs": 4000,
+        "targetIds": [
+          "8526db6a-ea41-42bf-8946-98d3f9eb82dc"
+        ]
+      },
+      {
+        "id": "a279d5b3-ebcd-48f1-a1d7-71914a0982fb",
+        "type": "image",
+        "x": 12.88888888888889,
+        "y": 72.7089240016094,
+        "w": 22.11111111111111,
+        "h": 23.519599666388658,
+        "visible": false,
+        "clickable": true,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789340354937-Boboth_verde_1_webP.webp"
+      },
+      {
+        "id": "55e63886-5f8e-4b70-bd34-d45b3c2f58b2",
+        "type": "button",
+        "x": 14.648888481987848,
+        "y": 77.52670542399088,
+        "w": 18.88888888888889,
+        "h": 14.083333333333334,
+        "visible": true,
+        "clickable": true,
+        "action": "timedSwap",
+        "icon": "🔊",
+        "src": "/pages/fabrica_de_historias/assets/images/1789340411437-Robot_Juguete_Button.webp",
+        "targetIds": [
+          "a279d5b3-ebcd-48f1-a1d7-71914a0982fb"
+        ],
+        "durationMs": 4000
+      },
+      {
+        "id": "deff79d7-ebec-4d74-abe7-65ff6b78dadb",
+        "type": "image",
+        "x": -21.982221815321182,
+        "y": 53.759805076414594,
+        "w": 31.444444444444446,
+        "h": 27.856547122602173,
+        "visible": true,
+        "clickable": true,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789344109908-Boboth_1_webP.webp"
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+import { NextRequest, NextResponse } from "next/server"
+import { promises as fs } from "fs"
+import path from "path"
+
+// fs.writeFile necesita Node runtime, no Edge.
+export const runtime = "nodejs"
+
+// MVP: mismo libro fijo que /api/manifest. Cuando pasemos a multi-libro,
+// el bookId viaja en la request y esto arma la ruta dinámicamente.
+const BOOK_ID = "fabrica_de_historias"
+
+const IMAGE_TYPES = ["image/webp", "image/gif", "image/png", "image/jpeg"]
+const AUDIO_TYPES = ["audio/mpeg", "audio/mp3", "audio/wav", "audio/ogg", "audio/webm"]
+
+function sanitizeFileName(name: string) {
+  return name.replace(/[^a-zA-Z0-9.\-_]/g, "_")
+}
+
+export async function POST(req: NextRequest) {
+  try {
+    const formData = await req.formData()
+    const file = formData.get("file")
+
+    if (!(file instanceof File)) {
+      return NextResponse.json({ error: "No se recibió ningún archivo" }, { status: 400 })
+    }
+
+    const isImage = IMAGE_TYPES.includes(file.type)
+    const isAudio = AUDIO_TYPES.includes(file.type)
+
+    if (!isImage && !isAudio) {
+      return NextResponse.json(
+        { error: `Tipo de archivo no soportado: ${file.type || "desconocido"}` },
+        { status: 400 }
+      )
+    }
+
+    // Límite simple para evitar subidas gigantes por error (10 MB).
+    if (file.size > 10 * 1024 * 1024) {
+      return NextResponse.json({ error: "El archivo pesa más de 10 MB" }, { status: 400 })
+    }
+
+    const subfolder = isImage ? "assets/images" : "assets/audio"
+    const dir = path.join(process.cwd(), "public", "pages", BOOK_ID, subfolder)
+    await fs.mkdir(dir, { recursive: true })
+
+    const safeName = `${Date.now()}-${sanitizeFileName(file.name)}`
+    const filePath = path.join(dir, safeName)
+
+    const buffer = Buffer.from(await file.arrayBuffer())
+    await fs.writeFile(filePath, buffer)
+
+    const publicUrl = `/pages/${BOOK_ID}/${subfolder}/${safeName}`
+    return NextResponse.json({ url: publicUrl })
+  } catch {
+    return NextResponse.json({ error: "No se pudo subir el archivo" }, { status: 500 })
+  }
+}
