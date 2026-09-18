@@ -1,7 +1,7 @@
 // types/overlay.ts
 // Tipos compartidos entre el visor (FlipBook), el editor (/editor) y la API (/api/manifest)
 
-export type OverlayType = "image" | "button" | "reveal"
+export type OverlayType = "image" | "button" | "reveal" | "video"
 export type OverlayAction = "none" | "toggleTarget" | "timedSwap" | "link"
 
 export interface PageOverlay {
@@ -44,6 +44,9 @@ export interface PageOverlay {
   role?: string
   bio?: string
   avatarColor?: string
+  /** Campos usados solo si type === "video": */
+  videoId?: string        // ID del video de YouTube (ej: "dQw4w9WgXcQ")
+  rotate?: number         // Rotación en grados (0, 90, 180, 270...), por si el video es vertical
 }
 
 export interface Manifest {
@@ -64,4 +67,6 @@ export interface Manifest {
   revealCardBg?: string
   /** Índice/tabla de contenidos del libro: entradas con título y a qué página saltar. */
   tableOfContents?: { id: string; label: string; page: number }[]
+  /** PDF descargable para los lectores (versión comprimida, distinta del PDF fuente de conversión). */
+  downloadPdfUrl?: string
 }

@@ -5,7 +5,7 @@
   "format": "webp",
   "scale": 2,
   "quality": 85,
-  "generated": "2026-09-17T22:23:26.160Z",
+  "generated": "2026-09-18T22:54:21.130Z",
   "basePath": "/pages/fabrica_de_historias",
   "overlays": {
     "1": [
@@ -47,6 +47,21 @@
         "action": "none",
         "src": "/pages/fabrica_de_historias/assets/images/1789709536869-Nuebe_2_webP.webp",
         "fit": "cover"
+      }
+    ],
+    "12": [
+      {
+        "id": "56f0288f-65b4-4b76-b4a2-fab22f1052d6",
+        "type": "video",
+        "x": 10.333333333333334,
+        "y": 11.163468794389205,
+        "w": 39.77777777777778,
+        "h": 18.015012510425354,
+        "visible": true,
+        "clickable": false,
+        "action": "none",
+        "rotate": -5,
+        "videoId": "3bnw2i0sEfk"
       }
     ],
     "16": [
@@ -358,6 +373,18 @@
         "clickable": false,
         "action": "none",
         "src": "/pages/fabrica_de_historias/assets/images/1789449551124-_Robot_parche_webP.webp"
+      },
+      {
+        "id": "35d73ee0-fcef-4928-ab14-60a46e9295c8",
+        "type": "image",
+        "x": 57.88888888888889,
+        "y": 78.86322250557103,
+        "w": 20,
+        "h": 17.848206839032528,
+        "visible": true,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/librovirtualdemo2/assets/images/1789746806076-Roboth_Azul.webp"
       }
     ],
     "20": [
@@ -489,7 +516,8 @@
         "targetIds": [
           "bfec7eb3-1634-471f-a83e-627e63fb86d1"
         ],
-        "durationMs": 2000
+        "durationMs": 2000,
+        "audioSrc": "/pages/librovirtualdemo2/assets/audio/1789748612729-Pocima.wav"
       }
     ],
     "23": [
@@ -545,11 +573,12 @@
         "w": 69.33333333333334,
         "h": 41.367806505421186,
         "visible": true,
-        "clickable": false,
+        "clickable": true,
         "action": "none",
         "icon": "🔊",
         "src": "/pages/fabrica_de_historias/assets/images/1789494798450-Bravo_Barco_webP.webp",
-        "fit": "cover"
+        "fit": "cover",
+        "audioSrc": "/pages/librovirtualdemo2/assets/audio/1789748891187-Arrrr.mp3"
       }
     ],
     "25": [
@@ -659,10 +688,11 @@
         "w": 64,
         "h": 56.79733110925771,
         "visible": true,
-        "clickable": false,
+        "clickable": true,
         "action": "none",
         "src": "/pages/fabrica_de_historias/assets/images/1789497785679-Bravo_y_Nico_webP.webp",
-        "fit": "cover"
+        "fit": "cover",
+        "audioSrc": "/pages/librovirtualdemo2/assets/audio/1789749078035-Aaaaahhh.ogg"
       }
     ],
     "29": [
@@ -689,7 +719,8 @@
         "clickable": true,
         "action": "none",
         "icon": "🔊",
-        "src": "/pages/fabrica_de_historias/assets/images/1789684329311-Nico_Final_webP.webp"
+        "src": "/pages/fabrica_de_historias/assets/images/1789684329311-Nico_Final_webP.webp",
+        "audioSrc": "/pages/librovirtualdemo2/assets/audio/1789749001455-Nico_Loro.wav"
       }
     ],
     "30": [
@@ -704,7 +735,8 @@
         "clickable": true,
         "action": "none",
         "icon": "🔊",
-        "src": "/pages/fabrica_de_historias/assets/images/1789684442795-Maquina_Coronas_webP.webp"
+        "src": "/pages/fabrica_de_historias/assets/images/1789684442795-Maquina_Coronas_webP.webp",
+        "audioSrc": "/pages/librovirtualdemo2/assets/audio/1789749672340-Servo_Motor_edit.mp3"
       },
       {
         "id": "33b50792-f955-47f2-bf97-e6657e4a8981",
@@ -746,7 +778,8 @@
         "durationMs": 5000,
         "targetIds": [
           "2e8daf10-c481-41fe-adc2-e5515c9f4b90"
-        ]
+        ],
+        "audioSrc": "/pages/librovirtualdemo2/assets/audio/1789749947646-Tilin.mp3"
       }
     ],
     "32": [
@@ -777,7 +810,8 @@
         "targetIds": [
           "08daa11b-ff6e-49d4-b712-2e5854e9ebc1"
         ],
-        "durationMs": 2000
+        "durationMs": 2000,
+        "audioSrc": "/pages/librovirtualdemo2/assets/audio/1789750569234-Untitled.mp3"
       }
     ],
     "33": [
@@ -796,7 +830,7 @@
       {
         "id": "a0aeb751-591e-4131-ba10-67108c06088a",
         "type": "button",
-        "x": 44.333333333333336,
+        "x": 44.44444444444444,
         "y": 72.41666666666666,
         "w": 10.666666666666668,
         "h": 11.083333333333334,
@@ -808,7 +842,8 @@
         "targetIds": [
           "f336d102-a4cb-4aa6-a0aa-ba05ea979757"
         ],
-        "durationMs": 2000
+        "durationMs": 2000,
+        "audioSrc": "/pages/librovirtualdemo2/assets/audio/1789750841138-Pop.wav"
       },
       {
         "id": "5fc42224-ea69-4adf-bc72-14f77d2d43f6",
@@ -837,7 +872,8 @@
         "targetIds": [
           "5fc42224-ea69-4adf-bc72-14f77d2d43f6"
         ],
-        "durationMs": 2000
+        "durationMs": 2000,
+        "audioSrc": "/pages/librovirtualdemo2/assets/audio/1789750852283-Pop.wav"
       },
       {
         "id": "3ba3da87-cd12-44e6-b38d-002429b6dd63",
@@ -866,7 +902,8 @@
         "durationMs": 2000,
         "targetIds": [
           "3ba3da87-cd12-44e6-b38d-002429b6dd63"
-        ]
+        ],
+        "audioSrc": "/pages/librovirtualdemo2/assets/audio/1789750863325-Pop.wav"
       }
     ],
     "34": [
@@ -999,7 +1036,8 @@
         "durationMs": 4000,
         "targetIds": [
           "56e8b65b-96d9-4128-9b2c-6a6681fc23d8"
-        ]
+        ],
+        "audioSrc": "/pages/librovirtualdemo2/assets/audio/1789751195180-Portal_edit.mp3"
       },
       {
         "id": "6045a01d-9884-4b0e-9fcc-05f6470f1cb4",
@@ -1108,7 +1146,8 @@
           "7b953b7f-d37a-45e3-b746-988600106b6b",
           "47a0ddab-1b3f-4da3-a5ee-ea96e0733453"
         ],
-        "durationMs": 10000
+        "durationMs": 10000,
+        "audioSrc": "/pages/librovirtualdemo2/assets/audio/1789751530199-Universe_space.mp3"
       }
     ],
     "40": [
@@ -1139,7 +1178,8 @@
         "targetIds": [
           "235e130f-2385-4f11-9a7b-52e3847a534f"
         ],
-        "durationMs": 3000
+        "durationMs": 3000,
+        "audioSrc": "/pages/librovirtualdemo2/assets/audio/1789751900330-Potion_Purple_edit.mp3"
       },
       {
         "id": "ccdadd53-a49b-44dd-800b-472a24c721e8",
@@ -1168,7 +1208,8 @@
         "targetIds": [
           "ccdadd53-a49b-44dd-800b-472a24c721e8"
         ],
-        "durationMs": 6000
+        "durationMs": 6000,
+        "audioSrc": "/pages/librovirtualdemo2/assets/audio/1789752408737-Dragon_sad_edit.mp3"
       },
       {
         "id": "871cfc68-339b-41b2-998f-e1d7ea56eb9c",
@@ -1197,7 +1238,8 @@
         "targetIds": [
           "871cfc68-339b-41b2-998f-e1d7ea56eb9c"
         ],
-        "durationMs": 2000
+        "durationMs": 2000,
+        "audioSrc": "/pages/librovirtualdemo2/assets/audio/1789752073805-Brillo_edit.mp3"
       }
     ],
     "41": [
@@ -1240,7 +1282,8 @@
         "durationMs": 6000,
         "targetIds": [
           "457c92cf-9ffb-4554-86cd-c86bd10d4a61"
-        ]
+        ],
+        "audioSrc": "/pages/librovirtualdemo2/assets/audio/1789752803133-Circuit_edit.mp3"
       }
     ],
     "42": [
@@ -1255,50 +1298,9 @@
         "clickable": false,
         "action": "none",
         "src": "/pages/fabrica_de_historias/assets/images/1789689255135-Nino_Asustado_webP.webp"
-      },
-      {
-        "id": "8ce31013-bd71-4396-ae9e-544a0b185b6e",
-        "type": "image",
-        "x": 42.73333062065973,
-        "y": 17.079235137354043,
-        "w": 104.66666666666666,
-        "h": 73.64470391993328,
-        "visible": false,
-        "clickable": true,
-        "action": "none",
-        "src": "/pages/fabrica_de_historias/assets/images/1789689718747-Violin_webP.webp"
-      },
-      {
-        "id": "a4f7965f-e876-4d05-bb85-b4c5f7f0d5b6",
-        "type": "button",
-        "x": 81.11111111111113,
-        "y": 27.081735084474936,
-        "w": 29.22222222222222,
-        "h": 24.770642201834864,
-        "visible": true,
-        "clickable": true,
-        "action": "timedSwap",
-        "icon": "🔊",
-        "src": "/pages/fabrica_de_historias/assets/images/1789690075799-Violin_1_Button.webp",
-        "targetIds": [
-          "8ce31013-bd71-4396-ae9e-544a0b185b6e"
-        ],
-        "durationMs": 4000
       }
     ],
     "43": [
-      {
-        "id": "879cb787-faf9-4d21-99f4-19e873b7a9cd",
-        "type": "image",
-        "x": -3.5555589463975688,
-        "y": 27.427024300442433,
-        "w": 15.222222222222223,
-        "h": 15.59633027522936,
-        "visible": true,
-        "clickable": false,
-        "action": "none",
-        "src": "/pages/fabrica_de_historias/assets/images/1789690297118-Violin_Parche.webp"
-      },
       {
         "id": "97ec8a43-f888-46cf-a5a9-bfa01057dd11",
         "type": "image",
@@ -1351,6 +1353,37 @@
         "clickable": false,
         "action": "none",
         "src": "/pages/fabrica_de_historias/assets/images/1789690699346-Nino_webP.webp"
+      },
+      {
+        "id": "d0368ee8-6be8-475c-948b-8949a213f24a",
+        "type": "image",
+        "x": -37.777777777777786,
+        "y": 2.0492082839214945,
+        "w": 80.33333333333333,
+        "h": 98.24854045037532,
+        "visible": false,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/librovirtualdemo2/assets/images/1789752912303-Violin_webP.webp",
+        "fit": "cover"
+      },
+      {
+        "id": "8dc5773e-8493-42f9-9986-b3630b281e01",
+        "type": "button",
+        "x": -18.777781168619793,
+        "y": 29.149292030366286,
+        "w": 28.111111111111107,
+        "h": 24.854045037531275,
+        "visible": true,
+        "clickable": true,
+        "action": "timedSwap",
+        "icon": "🔊",
+        "src": "/pages/librovirtualdemo2/assets/images/1789752966404-Violin_1_Button.webp",
+        "durationMs": 4000,
+        "targetIds": [
+          "d0368ee8-6be8-475c-948b-8949a213f24a"
+        ],
+        "audioSrc": "/pages/librovirtualdemo2/assets/audio/1789754393268-Audio_Violin.mp3"
       }
     ],
     "44": [
@@ -1381,7 +1414,8 @@
         "durationMs": 5000,
         "targetIds": [
           "96b7c6dc-b22a-4757-bc6b-6e5119c5e802"
-        ]
+        ],
+        "audioSrc": "/pages/librovirtualdemo2/assets/audio/1789762071965-Ladrido_1_edit.mp3"
       }
     ],
     "45": [
@@ -1425,7 +1459,8 @@
           "a1863b09-c8f2-4389-a524-555b45921d04",
           "72968534-f391-4bdf-a9ee-cddf2de1bbc2"
         ],
-        "durationMs": 10000
+        "durationMs": 10000,
+        "audioSrc": "/pages/librovirtualdemo2/assets/audio/1789762650106-Jesus_edit.mp3"
       }
     ],
     "47": [
@@ -1453,7 +1488,8 @@
         "visible": true,
         "clickable": true,
         "action": "none",
-        "src": "/pages/fabrica_de_historias/assets/images/1789691727174-perro_webP.webp"
+        "src": "/pages/fabrica_de_historias/assets/images/1789691727174-perro_webP.webp",
+        "audioSrc": "/pages/librovirtualdemo2/assets/audio/1789762777383-Ladrido_2_edit.mp3"
       }
     ],
     "49": [
@@ -1496,7 +1532,8 @@
         "visible": true,
         "clickable": true,
         "action": "none",
-        "src": "/pages/fabrica_de_historias/assets/images/1789692401195-Perro_2_webP.webp"
+        "src": "/pages/fabrica_de_historias/assets/images/1789692401195-Perro_2_webP.webp",
+        "audioSrc": "/pages/librovirtualdemo2/assets/audio/1789762874614-Perro_sad_edit.mp3"
       }
     ],
     "50": [
@@ -1539,7 +1576,8 @@
         "durationMs": 5000,
         "targetIds": [
           "d4785a6b-d4fb-4b02-9e7e-c7a7c1f13209"
-        ]
+        ],
+        "audioSrc": "/pages/librovirtualdemo2/assets/audio/1789763244764-Cofre_edit.mp3"
       }
     ],
     "51": [
@@ -1595,10 +1633,11 @@
         "action": "timedSwap",
         "icon": "🔊",
         "src": "/pages/fabrica_de_historias/assets/images/1789692999640-Mesa_Button.webp",
-        "durationMs": 5000,
+        "durationMs": 3000,
         "targetIds": [
           "35f0018c-bfb0-4bd4-8b02-ac10e66631b6"
-        ]
+        ],
+        "audioSrc": "/pages/librovirtualdemo2/assets/audio/1789765271589-Mesa_edit.mp3"
       }
     ],
     "54": [
@@ -1629,7 +1668,8 @@
         "durationMs": 3000,
         "targetIds": [
           "e5651f81-772b-4288-8e56-17975ef05cd9"
-        ]
+        ],
+        "audioSrc": "/pages/librovirtualdemo2/assets/audio/1789765866201-Olla_edit.mp3"
       }
     ],
     "55": [
@@ -1659,7 +1699,8 @@
         "src": "/pages/fabrica_de_historias/assets/images/1789693480140-Mesa_2_Button.webp",
         "targetIds": [
           "fe3a48ca-304b-4183-bd8c-54ff1039d91c"
-        ]
+        ],
+        "audioSrc": "/pages/librovirtualdemo2/assets/audio/1789765385497-Mesa_2_edit.mp3"
       }
     ],
     "56": [
@@ -1689,7 +1730,8 @@
         "src": "/pages/fabrica_de_historias/assets/images/1789693945703-Barco_Button.webp",
         "targetIds": [
           "399e4c7c-f9f5-4922-8909-7ef2342e8787"
-        ]
+        ],
+        "audioSrc": "/pages/librovirtualdemo2/assets/audio/1789766467315-Barco_Edit.mp3"
       },
       {
         "id": "8480fa36-f372-49f6-9e45-0b06322d3c68",
@@ -1763,7 +1805,8 @@
         "fit": "cover",
         "targetIds": [
           "3b1a6153-fdf1-4402-9f2e-9b1fe3610bd7"
-        ]
+        ],
+        "audioSrc": "/pages/librovirtualdemo2/assets/audio/1789767758971-Burbujas.mp3"
       },
       {
         "id": "3b1a6153-fdf1-4402-9f2e-9b1fe3610bd7",
@@ -1775,7 +1818,8 @@
         "visible": false,
         "clickable": true,
         "action": "none",
-        "src": "/pages/fabrica_de_historias/assets/images/1789694383920-Burbujas_webP.webp"
+        "src": "/pages/fabrica_de_historias/assets/images/1789694383920-Burbujas_webP.webp",
+        "audioSrc": "/pages/librovirtualdemo2/assets/audio/1789767599145-Burbujas.mp3"
       }
     ],
     "60": [
@@ -1799,14 +1843,14 @@
         "w": 100.1111111111111,
         "h": 47.87322768974145,
         "visible": false,
-        "clickable": true,
+        "clickable": false,
         "action": "none",
         "src": "/pages/fabrica_de_historias/assets/images/1789694820204-Lluvia_webP.webp"
       },
       {
         "id": "cd6f21c1-b820-4efb-938d-ad9f7b97c4ad",
         "type": "button",
-        "x": 27,
+        "x": 27.111111111111114,
         "y": 50.35112673685489,
         "w": 48.333333333333336,
         "h": 12.51042535446205,
@@ -1818,7 +1862,8 @@
         "targetIds": [
           "f4befc9f-fd30-4687-85dd-59d73d078d7a"
         ],
-        "durationMs": 10000
+        "durationMs": 10000,
+        "audioSrc": "/pages/librovirtualdemo2/assets/audio/1789768227654-Selva.mp3"
       }
     ],
     "61": [
@@ -1849,7 +1894,8 @@
         "durationMs": 10000,
         "targetIds": [
           "02bb91ac-eac9-4eb4-8dc8-d9982575412e"
-        ]
+        ],
+        "audioSrc": "/pages/librovirtualdemo2/assets/audio/1789768282744-Brillo_edit.mp3"
       },
       {
         "id": "1d17e92e-4ead-4b50-881d-0b28da2da6fb",
@@ -1920,10 +1966,11 @@
         "action": "timedSwap",
         "icon": "🔊",
         "src": "/pages/fabrica_de_historias/assets/images/1789695576500-Barco_Completo_Button.webp",
-        "durationMs": 18000,
+        "durationMs": 10000,
         "targetIds": [
           "16a9c32b-9962-44cf-9b3f-7462ddbb2db7"
-        ]
+        ],
+        "audioSrc": "/pages/librovirtualdemo2/assets/audio/1789768582857-Barco_Final.mp3"
       }
     ]
   },
@@ -2033,5 +2080,6 @@
       "label": "Créditos",
       "page": 66
     }
-  ]
+  ],
+  "downloadPdfUrl": "/pages/librovirtualdemo2/assets/downloads/1789772410974-fabrica_de_historias__Descargar.pdf"
 }

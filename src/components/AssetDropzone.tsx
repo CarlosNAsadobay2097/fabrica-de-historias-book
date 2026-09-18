@@ -43,6 +43,7 @@ export default function AssetDropzone({ label, value, accept, onChange }: AssetD
 
   const isImage = accept.startsWith("image")
   const isAudio = accept.startsWith("audio")
+  const isDocument = !isImage && !isAudio
 
   return (
     <div className="flex flex-col gap-1">
@@ -78,6 +79,12 @@ export default function AssetDropzone({ label, value, accept, onChange }: AssetD
                 className="w-full h-8"
                 onClick={(e) => e.stopPropagation()}
               />
+            )}
+            {isDocument && (
+              <div className="flex items-center gap-2 text-gray-300">
+                <span className="text-xl">📄</span>
+                <span className="text-xs">{value.split("/").pop()}</span>
+              </div>
             )}
             <span className="text-[10px] text-gray-500 break-all">{value}</span>
             <span className="text-blue-400 underline">Reemplazar archivo</span>

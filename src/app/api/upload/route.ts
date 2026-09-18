@@ -7,10 +7,11 @@ export const runtime = "nodejs"
 
 // MVP: mismo libro fijo que /api/manifest. Cuando pasemos a multi-libro,
 // el bookId viaja en la request y esto arma la ruta dinámicamente.
-const BOOK_ID = "fabrica_de_historias"
+const BOOK_ID = "librovirtualdemo2"
 
 const IMAGE_TYPES = ["image/webp", "image/gif", "image/png", "image/jpeg"]
 const AUDIO_TYPES = ["audio/mpeg", "audio/mp3", "audio/wav", "audio/ogg", "audio/webm"]
+const PDF_TYPES = ["application/pdf"]
 
 function sanitizeFileName(name: string) {
   return name.replace(/[^a-zA-Z0-9.\-_]/g, "_")
@@ -27,20 +28,26 @@ export async function POST(req: NextRequest) {
 
     const isImage = IMAGE_TYPES.includes(file.type)
     const isAudio = AUDIO_TYPES.includes(file.type)
+    const isPdf   = PDF_TYPES.includes(file.type)
 
-    if (!isImage && !isAudio) {
+    if (!isImage && !isAudio && !isPdf) {
       return NextResponse.json(
         { error: `Tipo de archivo no soportado: ${file.type || "desconocido"}` },
         { status: 400 }
       )
     }
 
-    // Límite simple para evitar subidas gigantes por error (10 MB).
-    if (file.size > 10 * 1024 * 1024) {
-      return NextResponse.json({ error: "El archivo pesa más de 10 MB" }, { status: 400 })
+    // Límite simple para evitar subidas gigantes por error.
+    // Los PDF (aunque comprimidos) suelen pesar más que una imagen/audio suelto.
+    const maxSize = isPdf ? 40 * 1024 * 1024 : 10 * 1024 * 1024
+    if (file.size > maxSize) {
+      return NextResponse.json(
+        { error: `El archivo pesa más de ${maxSize / (1024 * 1024)} MB` },
+        { status: 400 }
+      )
     }
 
-    const subfolder = isImage ? "assets/images" : "assets/audio"
+    const subfolder = isImage ? "assets/images" : isAudio ? "assets/audio" : "assets/downloads"
     const dir = path.join(process.cwd(), "public", "pages", BOOK_ID, subfolder)
     await fs.mkdir(dir, { recursive: true })
 

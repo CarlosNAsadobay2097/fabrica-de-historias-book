@@ -10,10 +10,83 @@ import type { PageOverlay } from "@/types/overlay"
 export interface OverlayRegistry {
   byId: Map<string, HTMLElement>
   audio: Map<string, HTMLAudioElement>
+  videos: HTMLIFrameElement[]
 }
 
 export function createOverlayRegistry(): OverlayRegistry {
-  return { byId: new Map(), audio: new Map() }
+  return { byId: new Map(), audio: new Map(), videos: [] }
+}
+
+/**
+ * Pausa todos los videos de YouTube embebidos, vía postMessage (requiere que
+ * el iframe se haya cargado con `enablejsapi=1`). Se llama en cada "flip"
+ * de página, para que un video no siga sonando de fondo al pasar de hoja.
+ */
+export function pauseAllVideos(registry: OverlayRegistry) {
+  registry.videos.forEach((iframe) => {
+    iframe.contentWindow?.postMessage(
+      JSON.stringify({ event: "command", func: "pauseVideo", args: [] }),
+      "*"
+    )
+  })
+}
+
+/**
+ * Detiene TODOS los audios de overlays (botones con sonido, etc.) al pasar
+ * de página — no solo pausa, resetea a 0 para que la próxima vez que se
+ * toque ese botón arranque desde el principio, no desde donde quedó.
+ */
+export function pauseAllAudio(registry: OverlayRegistry) {
+  registry.audio.forEach((audio) => {
+    audio.pause()
+    audio.currentTime = 0
+  })
+}
+
+/**
+ * Crea el overlay de un video de YouTube embebido directo en la página
+ * (sin modal). Soporta rotación por si el video fue grabado en vertical.
+ */
+export function buildVideoElement(overlay: PageOverlay, registry: OverlayRegistry): HTMLElement {
+  const el = document.createElement("div")
+  el.dataset.overlayId = overlay.id
+  el.dataset.overlayType = "video"
+  el.style.position = "absolute"
+  el.style.left = `${overlay.x}%`
+  el.style.top = `${overlay.y}%`
+  el.style.width = `${overlay.w}%`
+  el.style.height = `${overlay.h}%`
+  el.style.overflow = "hidden"
+  el.style.borderRadius = "8px"
+  el.style.zIndex = "5"
+
+  const rotate = overlay.rotate ?? 0
+  if (rotate !== 0) {
+    // Inclinación decorativa (para calzar con un elemento del diseño, ej.
+    // una tarjeta/polaroid torcida) — gira sobre su propio centro, sin
+    // tocar el tamaño de la caja.
+    el.style.transform = `rotate(${rotate}deg)`
+  }
+
+  if (overlay.videoId) {
+    const iframe = document.createElement("iframe")
+    iframe.src = `https://www.youtube-nocookie.com/embed/${overlay.videoId}?enablejsapi=1&rel=0&playsinline=1`
+    iframe.style.cssText = "width:100%;height:100%;border:0;display:block;"
+    iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    iframe.allowFullscreen = true
+    el.appendChild(iframe)
+    registry.videos.push(iframe)
+  } else {
+    el.style.background = "rgba(0,0,0,.4)"
+    el.style.display = "flex"
+    el.style.alignItems = "center"
+    el.style.justifyContent = "center"
+    el.style.color = "#fff"
+    el.style.fontSize = "1.5rem"
+    el.textContent = "▶️"
+  }
+
+  return el
 }
 
 /**
@@ -278,6 +351,20 @@ export function buildRevealHotspot(
     hs.setAttribute("data-reveal-open", "true")
     card = buildCard()
     pageEl.appendChild(card)
+
+    // La altura de la tarjeta depende de cuánto texto tenga la bio (varía
+    // por persona), así que recién con la tarjeta ya en el DOM podemos medir
+    // su alto real. Si se pasa del borde inferior de la página, la subimos.
+    requestAnimationFrame(() => {
+      if (!card) return
+      const pageRect = pageEl.getBoundingClientRect()
+      const cardRect = card.getBoundingClientRect()
+      const overflowPx = cardRect.bottom - (pageRect.bottom - 8)
+      if (overflowPx > 0) {
+        const currentTop = parseFloat(card.style.top) || 0
+        card.style.top = `${Math.max(4, currentTop - overflowPx)}px`
+      }
+    })
   }
 
   hs.addEventListener("forceclose", closeReveal)

@@ -10,7 +10,7 @@
 import { useEffect, useRef, useState, useCallback } from "react"
 import type { SizeType } from "page-flip"
 import type { Manifest } from "@/types/overlay"
-import { buildOverlayElement, buildRevealHotspot, createOverlayRegistry } from "@/lib/overlay-render"
+import { buildOverlayElement, buildRevealHotspot, buildVideoElement, createOverlayRegistry, pauseAllAudio, pauseAllVideos } from "@/lib/overlay-render"
 
 interface FlipBookProps {
   manifest: string
@@ -262,6 +262,8 @@ export default function FlipBook({ manifest: manifestUrl, title }: FlipBookProps
         pageOverlays?.forEach(overlay => {
           if (overlay.type === "reveal" && revealImg) {
             div.appendChild(buildRevealHotspot(overlay, revealImg, div, manifest.revealCardBg))
+          } else if (overlay.type === "video") {
+            div.appendChild(buildVideoElement(overlay, overlayRegistry))
           } else {
             div.appendChild(buildOverlayElement(overlay, overlayRegistry))
           }
@@ -281,6 +283,8 @@ export default function FlipBook({ manifest: manifestUrl, title }: FlipBookProps
         setZoomIdx(0) // Resetear zoom al pasar página
         isDragging.current = false
         playSound(audioFlip.current)
+        pauseAllVideos(overlayRegistry) // que ningún video siga sonando de fondo
+        pauseAllAudio(overlayRegistry) // que ningún audio de botón siga sonando de fondo
         
         // Restaurar transform normal después del flip
         requestAnimationFrame(() => {
@@ -743,6 +747,21 @@ export default function FlipBook({ manifest: manifestUrl, title }: FlipBookProps
 
         </div>
       </nav>
+
+      {manifest?.downloadPdfUrl && (
+        <a
+          href={manifest.downloadPdfUrl}
+          download
+          className={`fixed left-4 z-50 flex items-center gap-2 rounded-full border border-white/10 bg-[#161616]/95 backdrop-blur px-4 py-2.5 text-xs text-gray-300 hover:bg-white/10 hover:text-white active:bg-blue-600 active:text-white shadow-lg transition-all ${
+            isMobile ? "bottom-28" : "bottom-32"
+          }`}
+          aria-label="Descargar PDF"
+          title="Descargar PDF"
+        >
+          <span className="text-base">⬇️</span>
+          {!isMobile && <span>Descargar PDF</span>}
+        </a>
+      )}
 
       {tocOpen && (
         <>

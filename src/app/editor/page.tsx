@@ -9,6 +9,13 @@ function pageUrl(basePath: string, format: string, n: number): string {
   return `${basePath}/page-${String(n).padStart(3, "0")}.${format}`
 }
 
+function overlayIcon(type: OverlayType) {
+  if (type === "image") return "🖼️"
+  if (type === "reveal") return "🫥"
+  if (type === "video") return "🎬"
+  return "🔘"
+}
+
 function newOverlay(type: OverlayType, existingCount: number): PageOverlay {
   // Escalonamos la posición inicial para que overlays agregados en secuencia
   // no nazcan exactamente superpuestos (antes: siempre x:40,y:40 → parecía
@@ -29,6 +36,20 @@ function newOverlay(type: OverlayType, existingCount: number): PageOverlay {
       role: "Cargo",
       bio: "",
       avatarColor: "#4a6cf7",
+    }
+  }
+  if (type === "video") {
+    return {
+      id: crypto.randomUUID(),
+      type,
+      x: 15 + step,
+      y: 15 + step,
+      w: 30,
+      h: 20,
+      visible: true,
+      clickable: false,
+      action: "none",
+      rotate: 0,
     }
   }
   return {
@@ -110,6 +131,10 @@ export default function EditorPage() {
 
   const updateRevealCardBg = (url: string) => {
     setManifest((prev) => (prev ? { ...prev, revealCardBg: url } : prev))
+  }
+
+  const updateDownloadPdf = (url: string) => {
+    setManifest((prev) => (prev ? { ...prev, downloadPdfUrl: url } : prev))
   }
 
   const addTocEntry = () => {
@@ -235,6 +260,12 @@ export default function EditorPage() {
           >
             + Punto de revelado (equipo)
           </button>
+          <button
+            onClick={() => addOverlay("video")}
+            className="px-3 py-2 rounded bg-red-600 hover:bg-red-500 text-sm text-left"
+          >
+            + Video (YouTube)
+          </button>
         </div>
 
         <AssetDropzone
@@ -249,6 +280,13 @@ export default function EditorPage() {
           accept="image/webp,image/png,image/jpeg"
           value={manifest.revealCardBg}
           onChange={updateRevealCardBg}
+        />
+
+        <AssetDropzone
+          label="PDF descargable para lectores (botón de descarga, todo el libro)"
+          accept="application/pdf"
+          value={manifest.downloadPdfUrl}
+          onChange={updateDownloadPdf}
         />
 
         <div className="flex flex-col gap-2 border-t border-white/10 pt-3">
@@ -296,7 +334,7 @@ export default function EditorPage() {
                   selectedId === o.id ? "bg-blue-600" : "bg-white/5 hover:bg-white/10"
                 }`}
               >
-                {o.type === "image" ? "🖼️" : o.type === "reveal" ? "🫥" : "🔘"} {o.id.slice(0, 8)}
+                {overlayIcon(o.type)} {o.id.slice(0, 8)}
                 {!o.visible && <span className="text-gray-500"> (oculta)</span>}
               </button>
               <button
@@ -366,6 +404,8 @@ export default function EditorPage() {
                     ? "2px solid #3b82f6"
                     : o.type === "reveal"
                     ? "2px dashed #a855f7"
+                    : o.type === "video"
+                    ? "2px dashed #dc2626"
                     : "1px dashed rgba(255,255,255,0.4)",
                 borderRadius: o.type === "reveal" ? "9999px" : undefined,
                 background:
@@ -373,13 +413,21 @@ export default function EditorPage() {
                     ? "rgba(59,130,246,0.15)"
                     : o.type === "reveal"
                     ? "rgba(168,85,247,0.15)"
+                    : o.type === "video"
+                    ? "rgba(220,38,38,0.15)"
                     : "transparent",
                 opacity: o.visible ? 1 : 0.4,
+                transform: o.type === "video" && o.rotate ? `rotate(${o.rotate}deg)` : undefined,
               }}
             >
               {o.type === "reveal" ? (
                 <div className="w-full h-full flex items-center justify-center text-[10px] text-purple-200 font-semibold pointer-events-none text-center px-1">
                   {(o.name || "").trim().split(/\s+/).map((w) => w[0]).join("").slice(0, 2).toUpperCase() || "?"}
+                </div>
+              ) : o.type === "video" ? (
+                <div className="w-full h-full flex flex-col items-center justify-center text-red-200 pointer-events-none gap-1">
+                  <span className="text-lg">▶️</span>
+                  <span className="text-[9px] text-center px-1 break-all">{o.videoId || "sin ID"}</span>
                 </div>
               ) : o.src ? (
                 <img
@@ -511,14 +559,69 @@ export default function EditorPage() {
                   </div>
                 </label>
                 <p className="text-[10px] text-gray-500">
-                  Este punto revela la "Foto real de esta página" cargada arriba, en el lugar y
+                  Este punto revela la “Foto real de esta página” cargada arriba, en el lugar y
                   tamaño de este círculo. Ajustá el tamaño del círculo para que cubra bien el
                   rostro.
                 </p>
               </>
             )}
 
-            {selected.type !== "reveal" && (
+            {selected.type === "video" && (
+              <>
+                <label className="flex flex-col gap-1">
+                  <span className="text-xs text-gray-400">Link o ID del video de YouTube</span>
+                  <input
+                    className="bg-white/5 border border-white/10 rounded px-2 py-1"
+                    placeholder="https://youtu.be/XXXXXXXXXXX o solo el ID"
+                    defaultValue={selected.videoId ?? ""}
+                    onBlur={(e) => {
+                      const raw = e.target.value.trim()
+                      const match = raw.match(
+                        /(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|shorts\/))([a-zA-Z0-9_-]{6,})/
+                      )
+                      const id = match ? match[1] : raw
+                      patchOverlay(selected.id, { videoId: id })
+                    }}
+                  />
+                </label>
+                <p className="text-[10px] text-gray-500">
+                  Pegá el link completo de YouTube (marcado como “No listado”) o directamente el
+                  ID del video — se guarda solo al salir del campo.
+                </p>
+                <label className="flex flex-col gap-1">
+                  <span className="text-xs text-gray-400">
+                    Inclinación (grados) — para calzar con el diseño de la página
+                  </span>
+                  <div className="flex items-center gap-2">
+                    <input
+                      type="range"
+                      min={-45}
+                      max={45}
+                      step={1}
+                      className="flex-1"
+                      value={selected.rotate ?? 0}
+                      onChange={(e) => patchOverlay(selected.id, { rotate: parseInt(e.target.value) })}
+                    />
+                    <input
+                      type="number"
+                      className="w-16 bg-white/5 border border-white/10 rounded px-2 py-1 text-center"
+                      value={selected.rotate ?? 0}
+                      onChange={(e) => patchOverlay(selected.id, { rotate: parseInt(e.target.value) || 0 })}
+                    />
+                  </div>
+                </label>
+                <label className="flex items-center gap-2">
+                  <input
+                    type="checkbox"
+                    checked={selected.visible}
+                    onChange={(e) => patchOverlay(selected.id, { visible: e.target.checked })}
+                  />
+                  <span className="text-xs text-gray-400">Visible al cargar la página</span>
+                </label>
+              </>
+            )}
+
+            {selected.type !== "reveal" && selected.type !== "video" && (
               <>
                 <label className="flex items-center gap-2">
                   <input
@@ -614,7 +717,7 @@ export default function EditorPage() {
                                 }}
                               />
                               <span>
-                                {o.type === "image" ? "🖼️" : o.type === "reveal" ? "🫥" : "🔘"}{" "}
+                                {overlayIcon(o.type)}{" "}
                                 {o.id.slice(0, 8)}
                               </span>
                             </label>
