@@ -1,0 +1,43 @@
+{
+  "name": "fabrica_de_historias_web",
+  "source": "fabrica_de_historias_web.pdf",
+  "pages": 68,
+  "format": "webp",
+  "scale": 2,
+  "quality": 85,
+  "generated": "2026-09-17T22:10:47.184Z",
+  "basePath": "/pages/fabrica_de_historias_web",
+  "overlays": {
+    "16": [
+      {
+        "id": "eeb6e4e3-a914-4ade-881b-442cbefed838",
+        "type": "button",
+        "x": 60.111111111111114,
+        "y": 27.17681452072691,
+        "w": 23.666666666666668,
+        "h": 21.267723102585485,
+        "visible": true,
+        "clickable": true,
+        "action": "timedSwap",
+        "icon": "🔊",
+        "src": "/pages/fabrica_de_historias_web/assets/images/1789682702866-Textura_bg.webp",
+        "targetIds": [
+          "c9d0c4a7-2e85-45dd-bcc2-a7d8af813490"
+        ],
+        "durationMs": 5000
+      },
+      {
+        "id": "c9d0c4a7-2e85-45dd-bcc2-a7d8af813490",
+        "type": "image",
+        "x": 17.444444444444446,
+        "y": 58.28023088087729,
+        "w": 67.55555555555556,
+        "h": 25.688073394495415,
+        "visible": false,
+        "clickable": true,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias_web/assets/images/1789682724129-Imagen_Foto.webp"
+      }
+    ]
+  }
+}

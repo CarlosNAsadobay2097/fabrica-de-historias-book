@@ -5,165 +5,1992 @@
   "format": "webp",
   "scale": 2,
   "quality": 85,
-  "generated": "2026-09-13T22:35:51.309Z",
+  "generated": "2026-09-17T22:23:26.160Z",
   "basePath": "/pages/fabrica_de_historias",
   "overlays": {
-    "18": [
+    "16": [
       {
-        "id": "42e24497-7f00-41e5-b4a5-c09481bd9210",
-        "type": "image",
-        "x": 23.333333333333332,
-        "y": 45.52543582868536,
-        "w": 61.77777777777778,
-        "h": 51.37614678899083,
+        "id": "9d59dda3-8f13-4c91-bc0e-01e19649722f",
+        "type": "reveal",
+        "x": 69.00000000000003,
+        "y": 41.60550764145903,
+        "w": 17.888888888888886,
+        "h": 14.09507923269391,
         "visible": true,
         "clickable": true,
         "action": "none",
-        "src": "/pages/fabrica_de_historias/assets/images/1789339252418-Dragon_morado_webP.webp"
+        "name": "María de los Ángeles Cruz Tamayo",
+        "role": " Magíster en Educación y Educación Inclusiva",
+        "bio": "Magíster en Educación y Educación Inclusiva con mención en Intervención Psicoeducativa con doble Licenciatura en Ciencias de la Educación y en  Turismo y Hotelería. Posee una destacada trayectoria como docente e investigadora universitaria en entornos virtuales e híbridos. Es especialista en gamificación sostenible, inclusión educativa, inteligencia artificial aplicada a la enseñanza y dirección de proyectos de innovación.",
+        "avatarColor": "#ff2929"
+      },
+      {
+        "id": "41bb6ada-41ce-453f-b13c-21fe8a97a826",
+        "type": "reveal",
+        "x": 63.222222222222214,
+        "y": 57.02918834543108,
+        "w": 15.777777777777777,
+        "h": 12.51042535446205,
+        "visible": true,
+        "clickable": true,
+        "action": "none",
+        "name": "Camila Valencia Martínez",
+        "role": "Estudiante de sexto ciclo de Educación Especial",
+        "bio": "Es estudiante de sexto ciclo de Educación Especial en la Universidad Nacional de Educación. Con 22 años y una marcada vocación inclusiva, destaca por su experiencia voluntaria en programas de atención infantil, aulas hospitalarias en el Hospital Vicente Corral Moscoso, control de tareas en UDIPSAI y educación vial en EMOV EP.",
+        "avatarColor": "#c4174b"
+      },
+      {
+        "id": "7be0d4ee-aee2-4afb-b7ac-896ff26cb7f3",
+        "type": "reveal",
+        "x": 86.55555555555556,
+        "y": 63.612181191846076,
+        "w": 15.777777777777777,
+        "h": 11.843202668890743,
+        "visible": true,
+        "clickable": true,
+        "action": "none",
+        "name": "Jean Fernando Criollo Balladares ",
+        "role": "Estudiante de Educación Básica de la UNAE",
+        "bio": "Estudiante de Educación Básica de la UNAE con experiencia en formación docente, investigación, vinculación con la sociedad y ayudantías de cátedra. Ha participado como facilitador educativo, coordinador de proyectos, investigador y voluntario. Destaca por su liderazgo, compromiso, trabajo comunitario, participación en eventos académicos y formación continua orientada a la innovación educativa. ",
+        "avatarColor": "#283657"
+      },
+      {
+        "id": "825362df-8419-4b0e-8ba9-14b60fa527c7",
+        "type": "reveal",
+        "x": 83.44444444444444,
+        "y": 49.92827478302231,
+        "w": 16.88888888888889,
+        "h": 12.343619683069225,
+        "visible": true,
+        "clickable": true,
+        "action": "none",
+        "name": "Cristina Lissette Villacís Espín",
+        "role": "Magíster y Licenciada en Ciencias de la Educación",
+        "bio": "Profesional de la educación con más de 30 años de experiencia en docencia, gestión e innovación. Es Magíster y Licenciada en Ciencias de la Educación y Profesora de Enseñanza Secundaria en la Especialización Física y Matemática, ha sido docente y directiva en diversos niveles educativos. Actualmente impulsa proyectos de formación docente, investigación e iniciativas STEAM con enfoque intercultural para el fortalecimiento de la educación en la Amazonía ecuatoriana. ",
+        "avatarColor": "#706729"
+      }
+    ],
+    "17": [
+      {
+        "id": "859310b3-6389-4a7e-9283-b996ca51e710",
+        "type": "reveal",
+        "x": -1.2222222222222223,
+        "y": 47.44370359495543,
+        "w": 14.888888888888888,
+        "h": 12.01000834028357,
+        "visible": true,
+        "clickable": true,
+        "action": "none",
+        "name": "Karina Maribel Castillos Pinos",
+        "role": "Licenciada en Psicología Educativa y Magíster en Educación Inclusiva e Intercultural",
+        "bio": "Es una profesional ecuatoriana, Licenciada en Psicología Educativa y Magíster en Educación Inclusiva e Intercultural. Actualmente cursa su doctorado y se desempeña como docente investigadora en la UNAE. Cuenta con amplia experiencia en docencia, proyectos de investigación e innovación, ponencias y publicaciones indexadas.",
+        "avatarColor": "#409184"
+      },
+      {
+        "id": "95fff8ce-f6e6-44cc-a67e-559e71129f2e",
+        "type": "reveal",
+        "x": 4.222222222222223,
+        "y": 59.53127596157606,
+        "w": 15.666666666666668,
+        "h": 12.176814011676397,
+        "visible": true,
+        "clickable": true,
+        "action": "none",
+        "name": "Gabriela Marisol Cañar Romero",
+        "role": "Educadora parvularia en atención y formación integral ",
+        "bio": "Educadora parvularia con trayectoria docente continua desde 2008 en niveles Maternal e Inicial. Especialista en expresión corporal, artística y danza infantil, ha liderado festivales y capacitaciones culturales comunitarias en el noroccidente de Quito. Formada en la Universidad Politécnica Salesiana y estudiante de séptimo semestre de Educación Inicial en la Universidad Nacional de Educación (UNAE), destaca por su perfil proactivo, liderazgo de proyectos educativos e investigación aplicada al desarrollo infantil.",
+        "avatarColor": "#2c9b85"
+      },
+      {
+        "id": "ea139117-269b-45ce-9912-69cbd79947b2",
+        "type": "reveal",
+        "x": 10.444444444444445,
+        "y": 45.76397180756098,
+        "w": 14.11111111111111,
+        "h": 11.009174311926607,
+        "visible": true,
+        "clickable": true,
+        "action": "none",
+        "name": "Dilida Anayra Luengo Molero",
+        "role": "Doctora en Ciencias Pedagógicas y Máster en Educación",
+        "bio": "Doctora en Ciencias Pedagógicas y Máster en Educación, experta en innovación educativa y tecnopedagogía. Destaca por su trayectoria en la gestión estratégica de investigación, didácticas innovadoras, gamificación y desarrollo sostenible. Es especialista en propiedad intelectual, respaldada por registros de software y diseño industrial de videojuegos y juegos de mesa educativos. Creadora de juegos de mesas como: La Liga Biomimética y Exploradores de Venezuela: El Mapa Dorado. ",
+        "avatarColor": "#a14af7"
+      },
+      {
+        "id": "f7de849b-efd5-4a99-9679-1efbcb0171a0",
+        "type": "reveal",
+        "x": 19.444444444444446,
+        "y": 57.351127160003124,
+        "w": 14.333333333333334,
+        "h": 10.758965804837365,
+        "visible": true,
+        "clickable": true,
+        "action": "none",
+        "name": "Diana Maribel Armijos Robles",
+        "role": "Magíster especializada en Psicorrehabilitación",
+        "bio": "Estudiante de Doctorado y Magíster especializada en Psicorrehabilitación, Educación Especial e Inclusión Educativa. Cuenta con una sólida trayectoria en docencia universitaria, gestión de políticas públicas sobre discapacidad y dirección de proyectos de investigación. Además, es una activa investigadora con múltiples publicaciones científicas enfocadas en la atención a la diversidad y la neurociencia.",
+        "avatarColor": "#b38c00"
+      },
+      {
+        "id": "d497b781-a016-4697-9d40-c8ed4fb6b9c9",
+        "type": "reveal",
+        "x": 27.44444444444445,
+        "y": 44.41784372719454,
+        "w": 15.333333333333332,
+        "h": 12.67723102585488,
+        "visible": true,
+        "clickable": true,
+        "action": "none",
+        "name": "Jesús Hildemaro Briceño Méndez",
+        "role": "Doctor en Ciencias Aplicadas",
+        "bio": "Profesor Titular especialista en ingeniería eléctrica, de la Universidad de los Andes-ULA. Doctor en Ciencias Aplicadas, experto en sistemas de potencia, modelado de líneas de transmisión, circuitos de distribución y máquinas eléctricas. Investigador y docente de actualización en sistemas de conexión a tierra y cálculo de sobrevoltajes. ",
+        "avatarColor": "#5155b8"
+      }
+    ],
+    "18": [
+      {
+        "id": "aaff80d5-939f-4a08-a461-a54d9bbe46f2",
+        "type": "image",
+        "x": 79.33333333333333,
+        "y": 57.45204769640391,
+        "w": 30.22222222222222,
+        "h": 22.26855713094245,
+        "visible": true,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789446620755-Boboth_1_webP.webp"
+      },
+      {
+        "id": "28daedc8-b7be-468c-9afa-0634b4430e7b",
+        "type": "image",
+        "x": 19.88888888888889,
+        "y": 49.7731467303482,
+        "w": 63.44444444444445,
+        "h": 45.53794829024187,
+        "visible": true,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789446677958-Dragon_morado_webP.webp"
       }
     ],
     "19": [
       {
-        "id": "8526db6a-ea41-42bf-8946-98d3f9eb82dc",
+        "id": "1f4cf1ed-8663-452c-96ec-5a8e3da83a9b",
         "type": "image",
-        "x": 45.666666666666664,
-        "y": 52.03085955825818,
-        "w": 34.77777777777778,
-        "h": 35.446205170975816,
+        "x": 35.333333333333336,
+        "y": 56.61801552156093,
+        "w": 53.666666666666664,
+        "h": 29.02418682235196,
         "visible": false,
         "clickable": true,
         "action": "none",
-        "src": "/pages/fabrica_de_historias/assets/images/1789339745986-Boboth_jugando_1_webP.webp"
+        "src": "/pages/fabrica_de_historias/assets/images/1789446748756-Boboth_jugando_1_webP.webp"
       },
       {
-        "id": "90f4d2f4-e5b3-4ff2-a166-4c4d4766bcd9",
-        "type": "image",
-        "x": 73.11111111111111,
-        "y": 64.45204326766446,
-        "w": 20,
-        "h": 17.01417848206839,
-        "visible": false,
-        "clickable": true,
-        "action": "none",
-        "src": "/pages/fabrica_de_historias/assets/images/1789339776404-Corazon_webP.webp"
-      },
-      {
-        "id": "c7476787-90d0-436a-a97f-d89658031806",
-        "type": "image",
-        "x": 4.4444444444444455,
-        "y": 48.18265404275699,
-        "w": 52.888888888888886,
-        "h": 39.366138448707254,
-        "visible": false,
-        "clickable": true,
-        "action": "none",
-        "audioSrc": "/pages/fabrica_de_historias/assets/images/1789339804294-Dragon_morado_jugando_webP.webp",
-        "src": "/pages/fabrica_de_historias/assets/images/1789339817219-Dragon_morado_jugando_webP.webp"
-      },
-      {
-        "id": "444deda7-46fe-422b-9b2d-04319624a5ad",
+        "id": "a6629a44-2758-4ac1-9dd4-10abf92a749d",
         "type": "button",
-        "x": 72.87110731336806,
-        "y": 65.76091766357422,
-        "w": 19.666666666666664,
-        "h": 13.666666666666666,
+        "x": 44.44444444444444,
+        "y": 57.11259563531947,
+        "w": 35.66666666666667,
+        "h": 27.27272727272727,
         "visible": true,
         "clickable": true,
         "action": "timedSwap",
         "icon": "🔊",
-        "src": "/pages/fabrica_de_historias/assets/images/1789339982416-Corazon_button.webp",
+        "src": "/pages/fabrica_de_historias/assets/images/1789446814248-Robot_Button.webp",
         "targetIds": [
-          "90f4d2f4-e5b3-4ff2-a166-4c4d4766bcd9"
+          "1f4cf1ed-8663-452c-96ec-5a8e3da83a9b"
+        ],
+        "durationMs": 4000,
+        "audioSrc": "/pages/fabrica_de_historias/assets/audio/1789447860437-jeje_je.mp3"
+      },
+      {
+        "id": "33cb0c8e-c3de-4de2-b23a-1f30ad40cfce",
+        "type": "image",
+        "x": 73.44444444444444,
+        "y": 63.44537114261885,
+        "w": 20,
+        "h": 20,
+        "visible": false,
+        "clickable": true,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789446891264-Corazon_webP.webp"
+      },
+      {
+        "id": "00b1a3f0-8512-4407-a377-2c98a4540b8c",
+        "type": "button",
+        "x": 73.66666666666667,
+        "y": 66.69224221274891,
+        "w": 19.11111111111111,
+        "h": 13.010842368640535,
+        "visible": true,
+        "clickable": true,
+        "action": "timedSwap",
+        "icon": "🔊",
+        "src": "/pages/fabrica_de_historias/assets/images/1789446950453-Corazon_button.webp",
+        "durationMs": 2000,
+        "targetIds": [
+          "33cb0c8e-c3de-4de2-b23a-1f30ad40cfce"
+        ],
+        "audioSrc": "/pages/fabrica_de_historias/assets/audio/1789448708013-Pum_pum.mp3"
+      },
+      {
+        "id": "b6188621-322a-43ce-b200-179e03003f23",
+        "type": "image",
+        "x": 80.22222222222221,
+        "y": 71.10674860479435,
+        "w": 20.666666666666668,
+        "h": 20.517097581317763,
+        "visible": true,
+        "clickable": true,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789446999745-Oso.webp"
+      },
+      {
+        "id": "c3d80ea6-0765-40ae-b65b-2cb476dde4c9",
+        "type": "image",
+        "x": 2.888888888888888,
+        "y": 53.753123788459774,
+        "w": 56.777777777777786,
+        "h": 34.361968306922435,
+        "visible": false,
+        "clickable": true,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789447036028-Dragon_morado_jugando_webP.webp"
+      },
+      {
+        "id": "344be126-3b92-4139-b1bb-c806eefcc3c0",
+        "type": "button",
+        "x": 7.444444444444444,
+        "y": 54.115930450668536,
+        "w": 47.55555555555556,
+        "h": 33.444537114261884,
+        "visible": true,
+        "clickable": true,
+        "action": "timedSwap",
+        "icon": "🔊",
+        "src": "/pages/fabrica_de_historias/assets/images/1789447095064-Dragon_Morado_Button.webp",
+        "targetIds": [
+          "c3d80ea6-0765-40ae-b65b-2cb476dde4c9"
+        ],
+        "durationMs": 4000,
+        "audioSrc": "/pages/fabrica_de_historias/assets/audio/1789447717817-jeje_jaja_.mp3"
+      },
+      {
+        "id": "686bc70f-93fc-41bc-adb8-98b35995bdfd",
+        "type": "image",
+        "x": 12.444444444444445,
+        "y": 73.87656370135922,
+        "w": 23.444444444444446,
+        "h": 20.100083402835697,
+        "visible": false,
+        "clickable": true,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789448752086-Boboth_verde_1_webP.webp"
+      },
+      {
+        "id": "11852259-4eb5-4750-b385-4f7fcf820a81",
+        "type": "button",
+        "x": 15,
+        "y": 74.20434387054317,
+        "w": 18.666666666666668,
+        "h": 19.93327773144287,
+        "visible": true,
+        "clickable": true,
+        "action": "timedSwap",
+        "icon": "🔊",
+        "src": "/pages/fabrica_de_historias/assets/images/1789448785272-Robot_Juguete_Button.webp",
+        "durationMs": 4000,
+        "targetIds": [
+          "686bc70f-93fc-41bc-adb8-98b35995bdfd"
+        ],
+        "audioSrc": "/pages/fabrica_de_historias/assets/audio/1789449095955-Ta_tac_tac_clic.mp3"
+      },
+      {
+        "id": "d0e743f4-2f28-498c-9ebe-02cec69716fd",
+        "type": "image",
+        "x": -9.111114501953125,
+        "y": 60.35363306295285,
+        "w": 20.666666666666668,
+        "h": 18.432026688907424,
+        "visible": true,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789449551124-_Robot_parche_webP.webp"
+      }
+    ],
+    "20": [
+      {
+        "id": "ee944be1-49ba-470c-805d-0af5c5440d9e",
+        "type": "image",
+        "x": 64.88888888888889,
+        "y": 58.035863728399974,
+        "w": 30.555555555555557,
+        "h": 24.353628023352794,
+        "visible": false,
+        "clickable": true,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789451137419-Fantasma_Susto.webp"
+      },
+      {
+        "id": "bc3b9b4c-75b0-45e2-8e98-dd9a71b2d92c",
+        "type": "button",
+        "x": 66.77777777777779,
+        "y": 56.378652335605196,
+        "w": 26.333333333333332,
+        "h": 27.18932443703086,
+        "visible": true,
+        "clickable": true,
+        "action": "timedSwap",
+        "icon": "🔊",
+        "src": "/pages/fabrica_de_historias/assets/images/1789451161580-Fantasma_Button.webp",
+        "durationMs": 2000,
+        "audioSrc": "/pages/fabrica_de_historias/assets/audio/1789451301826-Buuuu.mp3",
+        "targetIds": [
+          "ee944be1-49ba-470c-805d-0af5c5440d9e"
+        ]
+      },
+      {
+        "id": "35d4adaf-4e1e-4e29-adde-5025f409c715",
+        "type": "image",
+        "x": 14.84444851345486,
+        "y": 53.27022829286451,
+        "w": 59.77777777777777,
+        "h": 48.04003336113428,
+        "visible": true,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789451380454-Alien_Susto_webP.webp"
+      },
+      {
+        "id": "f143de6c-e3b9-4cbe-bda9-81bcd88c49d0",
+        "type": "image",
+        "x": 73.11111111111111,
+        "y": 79.36947069335123,
+        "w": 25.11111111111111,
+        "h": 21.851542952460385,
+        "visible": true,
+        "clickable": true,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789625876788-Hilo_webP.webp",
+        "fit": "cover"
+      }
+    ],
+    "21": [
+      {
+        "id": "9ea25d42-d9a0-4277-aa1c-06aa5c433b8b",
+        "type": "image",
+        "x": 23.222222222222218,
+        "y": 47.527106430651834,
+        "w": 62.22222222222222,
+        "h": 62.88573811509591,
+        "visible": false,
+        "clickable": true,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789449769769-Caja_de_cristal_webP.webp"
+      },
+      {
+        "id": "902d6f00-ca00-4db0-b86a-58b83bd1d7c0",
+        "type": "button",
+        "x": 41.66666666666667,
+        "y": 76.46205160794801,
+        "w": 24.88888888888889,
+        "h": 22.101751459549625,
+        "visible": true,
+        "clickable": true,
+        "action": "timedSwap",
+        "icon": "🔊",
+        "src": "/pages/fabrica_de_historias/assets/images/1789449866106-Caja_de_cristal_Button.webp",
+        "durationMs": 2000,
+        "targetIds": [
+          "9ea25d42-d9a0-4277-aa1c-06aa5c433b8b"
+        ],
+        "audioSrc": "/pages/fabrica_de_historias/assets/audio/1789450921662-Clin.mp3"
+      }
+    ],
+    "22": [
+      {
+        "id": "aac7fbae-57da-4f9e-821f-a944eb886051",
+        "type": "image",
+        "x": 35,
+        "y": 49.44537165166936,
+        "w": 70.88888888888889,
+        "h": 51.54295246038365,
+        "visible": true,
+        "clickable": true,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789451547017-Cientifico_Asustado_webP.webp"
+      },
+      {
+        "id": "bfec7eb3-1634-471f-a83e-627e63fb86d1",
+        "type": "image",
+        "x": 62,
+        "y": 53.52627433668682,
+        "w": 52.55555555555556,
+        "h": 50.54211843202668,
+        "visible": false,
+        "clickable": true,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789451617073-Posima_Magica_webP.webp"
+      },
+      {
+        "id": "abad084d-7ff5-45ff-aaf4-1f4018317b2e",
+        "type": "button",
+        "x": 70.11111111111111,
+        "y": 59.025022683290764,
+        "w": 35.77777777777777,
+        "h": 39.0325271059216,
+        "visible": true,
+        "clickable": true,
+        "action": "timedSwap",
+        "icon": "🔊",
+        "src": "/pages/fabrica_de_historias/assets/images/1789451717901-Posima_Magica_Button.webp",
+        "targetIds": [
+          "bfec7eb3-1634-471f-a83e-627e63fb86d1"
+        ],
+        "durationMs": 2000
+      }
+    ],
+    "23": [
+      {
+        "id": "9bc1094f-e3fd-4d00-9536-e27a8996849c",
+        "type": "image",
+        "x": -6.888892279730903,
+        "y": 78.13594967648821,
+        "w": 20,
+        "h": 18.515429524603835,
+        "visible": true,
+        "clickable": true,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789451896542-Posima_Magica_parche.webp"
+      },
+      {
+        "id": "d2ed7377-e8fd-4b3d-8a33-4108b6c6beee",
+        "type": "image",
+        "x": 50.44444444444445,
+        "y": 51.02419053842069,
+        "w": 52.33333333333333,
+        "h": 49.04086738949125,
+        "visible": false,
+        "clickable": true,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789451967111-Cientifico_Crece_webP.webp"
+      },
+      {
+        "id": "5e1b8f51-609a-4278-9a8d-780089dd18f1",
+        "type": "button",
+        "x": 70.77777777777777,
+        "y": 78.37447547435362,
+        "w": 11.555555555555555,
+        "h": 15.512927439532945,
+        "visible": true,
+        "clickable": true,
+        "action": "timedSwap",
+        "icon": "🔊",
+        "src": "/pages/fabrica_de_historias/assets/images/1789452073752-Cientifico_Crece_Button.webp",
+        "durationMs": 2000,
+        "targetIds": [
+          "d2ed7377-e8fd-4b3d-8a33-4108b6c6beee"
+        ],
+        "audioSrc": "/pages/fabrica_de_historias/assets/audio/1789452521915-Gup_Gup_Gup.mp3"
+      }
+    ],
+    "24": [
+      {
+        "id": "b2c0d1a8-c0ba-4bd2-8175-bff31b3c0f7c",
+        "type": "button",
+        "x": 14.000000000000002,
+        "y": 31.346956941860732,
+        "w": 69.33333333333334,
+        "h": 41.367806505421186,
+        "visible": true,
+        "clickable": false,
+        "action": "none",
+        "icon": "🔊",
+        "src": "/pages/fabrica_de_historias/assets/images/1789494798450-Bravo_Barco_webP.webp",
+        "fit": "cover"
+      }
+    ],
+    "25": [
+      {
+        "id": "dbc26d04-ad0b-4d10-a20d-2ec7a36e56ed",
+        "type": "image",
+        "x": 18.11111111111111,
+        "y": 71.96413983495361,
+        "w": 27.111111111111114,
+        "h": 22.351959966638866,
+        "visible": true,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789684076161-Bravo_Mapas_webP.webp"
+      },
+      {
+        "id": "25329321-9716-4f20-828c-4cfd2cf2921d",
+        "type": "image",
+        "x": 2.2222222222222223,
+        "y": 68.87239366138449,
+        "w": 20,
+        "h": 20,
+        "visible": true,
+        "clickable": true,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789684154853-Nico_Mapas.webp"
+      }
+    ],
+    "26": [
+      {
+        "id": "f9f59478-aac2-4120-bdae-6ac0d2f286fb",
+        "type": "image",
+        "x": 10.555555555555555,
+        "y": 50.446205680026324,
+        "w": 60.44444444444444,
+        "h": 47.706422018348626,
+        "visible": false,
+        "clickable": true,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789495708439-Poema_webP.webp"
+      },
+      {
+        "id": "13518531-601c-4c9a-9272-403a25e2d310",
+        "type": "button",
+        "x": 28.22222222222222,
+        "y": 68.53878476204129,
+        "w": 22.444444444444443,
+        "h": 12.343619683069225,
+        "visible": true,
+        "clickable": true,
+        "action": "timedSwap",
+        "icon": "🔊",
+        "src": "/pages/fabrica_de_historias/assets/images/1789495846542-Poema_Button.webp",
+        "durationMs": 8000,
+        "targetIds": [
+          "f9f59478-aac2-4120-bdae-6ac0d2f286fb"
+        ]
+      },
+      {
+        "id": "083bec31-f0df-46e8-b42a-a295bd76c32c",
+        "type": "image",
+        "x": 4.222222222222222,
+        "y": 47.09841654239047,
+        "w": 32.22222222222222,
+        "h": 23.936613844870724,
+        "visible": false,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789495942928-Nico_el_loro_Tesoro.webp"
+      },
+      {
+        "id": "fc901096-4cb2-4234-be50-66fc93e4d34a",
+        "type": "button",
+        "x": 6.666666666666668,
+        "y": 47.509591911513176,
+        "w": 27.444444444444443,
+        "h": 22.85237698081735,
+        "visible": true,
+        "clickable": true,
+        "action": "timedSwap",
+        "icon": "🔊",
+        "src": "/pages/fabrica_de_historias/assets/images/1789496074543-Nico_el_loro_Tesoro_Button.webp",
+        "durationMs": 4000,
+        "targetIds": [
+          "083bec31-f0df-46e8-b42a-a295bd76c32c"
+        ]
+      },
+      {
+        "id": "2beb5840-ee8d-4041-9af4-030d42f5cb23",
+        "type": "image",
+        "x": 37,
+        "y": 49.50541924992832,
+        "w": 60.77777777777777,
+        "h": 42.61884904086739,
+        "visible": true,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789497727151-Bravo__Tesoro_webP.webp"
+      }
+    ],
+    "27": [
+      {
+        "id": "62171772-8bec-4a49-bb73-654ee3fba65e",
+        "type": "image",
+        "x": 35.44444444444444,
+        "y": 36.10091794024317,
+        "w": 64,
+        "h": 56.79733110925771,
+        "visible": true,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789497785679-Bravo_y_Nico_webP.webp",
+        "fit": "cover"
+      }
+    ],
+    "29": [
+      {
+        "id": "21b58c55-9b5b-47d4-ae8c-1b3c0bfb464f",
+        "type": "image",
+        "x": 5.888888888888888,
+        "y": 61.20517148486368,
+        "w": 55.77777777777778,
+        "h": 41.618015012510426,
+        "visible": true,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789684276991-Bravo_Final_webP.webp"
+      },
+      {
+        "id": "7e2dfa0a-62d2-43b6-84c5-6fdc69d5fc4b",
+        "type": "button",
+        "x": 55.00000000000001,
+        "y": 55.61134522909717,
+        "w": 38.44444444444444,
+        "h": 26.522101751459548,
+        "visible": true,
+        "clickable": true,
+        "action": "none",
+        "icon": "🔊",
+        "src": "/pages/fabrica_de_historias/assets/images/1789684329311-Nico_Final_webP.webp"
+      }
+    ],
+    "30": [
+      {
+        "id": "12a99725-7dfe-42ad-bcf5-ab3ebb9e50b3",
+        "type": "button",
+        "x": 6.666666666666667,
+        "y": 24.841535757540463,
+        "w": 28.22222222222222,
+        "h": 20.517097581317763,
+        "visible": true,
+        "clickable": true,
+        "action": "none",
+        "icon": "🔊",
+        "src": "/pages/fabrica_de_historias/assets/images/1789684442795-Maquina_Coronas_webP.webp"
+      },
+      {
+        "id": "33b50792-f955-47f2-bf97-e6657e4a8981",
+        "type": "image",
+        "x": 28.555555555555557,
+        "y": 29.839867726279063,
+        "w": 41.22222222222222,
+        "h": 29.69140950792327,
+        "visible": true,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789684544009-Princesa_weP.webp"
+      }
+    ],
+    "31": [
+      {
+        "id": "2e8daf10-c481-41fe-adc2-e5515c9f4b90",
+        "type": "image",
+        "x": 65.44444444444444,
+        "y": 40.02085121797461,
+        "w": 32.88888888888889,
+        "h": 28.523769808173476,
+        "visible": false,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789684644666-Libro_webP.webp"
+      },
+      {
+        "id": "b3b6c506-146a-42b0-85ac-41784dca066e",
+        "type": "image",
+        "x": 74.44444444444444,
+        "y": 47.604674911180865,
+        "w": 15.11111111111111,
+        "h": 13.59466221851543,
+        "visible": true,
+        "clickable": true,
+        "action": "timedSwap",
+        "src": "/pages/fabrica_de_historias/assets/images/1789684764021-Libro_Button.webp",
+        "durationMs": 5000,
+        "targetIds": [
+          "2e8daf10-c481-41fe-adc2-e5515c9f4b90"
+        ]
+      }
+    ],
+    "32": [
+      {
+        "id": "08daa11b-ff6e-49d4-b712-2e5854e9ebc1",
+        "type": "image",
+        "x": 22.444444444444443,
+        "y": 59.70392044232824,
+        "w": 25.333333333333336,
+        "h": 27.689741451209343,
+        "visible": false,
+        "clickable": true,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789684877262-espejo_webP.webp"
+      },
+      {
+        "id": "a3312412-daa3-4f3c-a298-e9591bd7ec73",
+        "type": "button",
+        "x": 21.982218424479168,
+        "y": 57.099751790364586,
+        "w": 25.444444444444443,
+        "h": 34.91666666666667,
+        "visible": true,
+        "clickable": true,
+        "action": "timedSwap",
+        "icon": "🔊",
+        "src": "/pages/fabrica_de_historias/assets/images/1789684972234-Espejo__magico_Button.webp",
+        "targetIds": [
+          "08daa11b-ff6e-49d4-b712-2e5854e9ebc1"
+        ],
+        "durationMs": 2000
+      }
+    ],
+    "33": [
+      {
+        "id": "f336d102-a4cb-4aa6-a0aa-ba05ea979757",
+        "type": "image",
+        "x": 35.333333333333336,
+        "y": 63.83333460489909,
+        "w": 28.77777777777778,
+        "h": 24,
+        "visible": false,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789685105420-telefono_webP.webp"
+      },
+      {
+        "id": "a0aeb751-591e-4131-ba10-67108c06088a",
+        "type": "button",
+        "x": 44.333333333333336,
+        "y": 72.41666666666666,
+        "w": 10.666666666666668,
+        "h": 11.083333333333334,
+        "visible": true,
+        "clickable": true,
+        "action": "timedSwap",
+        "icon": "🔊",
+        "src": "/pages/fabrica_de_historias/assets/images/1789685187859-Telefono_Button.webp",
+        "targetIds": [
+          "f336d102-a4cb-4aa6-a0aa-ba05ea979757"
         ],
         "durationMs": 2000
       },
       {
-        "id": "0cf48d14-871e-4e9d-aac6-635226b62645",
+        "id": "5fc42224-ea69-4adf-bc72-14f77d2d43f6",
         "type": "image",
-        "x": 80.77777777777779,
-        "y": 72.44120415694721,
-        "w": 19.22222222222222,
-        "h": 18.682235195996665,
-        "visible": true,
-        "clickable": true,
+        "x": 54.77777777777778,
+        "y": 59.16666793823242,
+        "w": 30.88888888888889,
+        "h": 26.75,
+        "visible": false,
+        "clickable": false,
         "action": "none",
-        "src": "/pages/fabrica_de_historias/assets/images/1789340054815-Oso.webp"
+        "src": "/pages/fabrica_de_historias/assets/images/1789685295390-anabico_webP.webp"
       },
       {
-        "id": "b1594162-3fe1-4b70-813e-7e2c4189514c",
+        "id": "6c0708c5-8aad-412d-90ac-8739e244ca3d",
         "type": "button",
-        "x": 3.888888888888889,
-        "y": 48.33194328607173,
-        "w": 54.22222222222223,
-        "h": 39.28273561301084,
+        "x": 59,
+        "y": 67.33333079020184,
+        "w": 21.444444444444443,
+        "h": 15,
         "visible": true,
         "clickable": true,
         "action": "timedSwap",
         "icon": "🔊",
-        "src": "/pages/fabrica_de_historias/assets/images/1789340205655-Dragon_Morado_Button.webp",
+        "src": "/pages/fabrica_de_historias/assets/images/1789685363435-abanico_Button.webp",
         "targetIds": [
-          "c7476787-90d0-436a-a97f-d89658031806"
+          "5fc42224-ea69-4adf-bc72-14f77d2d43f6"
         ],
-        "durationMs": 4000
+        "durationMs": 2000
       },
       {
-        "id": "117265a3-5b11-45ee-be99-544636a9fdd2",
+        "id": "3ba3da87-cd12-44e6-b38d-002429b6dd63",
+        "type": "image",
+        "x": 75.66666666666667,
+        "y": 55.49999872843425,
+        "w": 29.22222222222222,
+        "h": 33,
+        "visible": false,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789685527561-espejo__magico_webP.webp"
+      },
+      {
+        "id": "ac2bf22c-ad7b-45a5-b099-4f42a021eeb8",
         "type": "button",
-        "x": 50.87110731336806,
-        "y": 55.9380849202474,
-        "w": 24.444444444444443,
-        "h": 27.666666666666668,
+        "x": 84.22222222222221,
+        "y": 65.08333079020183,
+        "w": 12.11111111111111,
+        "h": 17.166666666666668,
         "visible": true,
         "clickable": true,
         "action": "timedSwap",
         "icon": "🔊",
-        "src": "/pages/fabrica_de_historias/assets/images/1789340316443-Robot_Button.webp",
-        "durationMs": 4000,
+        "src": "/pages/fabrica_de_historias/assets/images/1789685599411-Espejo_Button.webp",
+        "durationMs": 2000,
         "targetIds": [
-          "8526db6a-ea41-42bf-8946-98d3f9eb82dc"
+          "3ba3da87-cd12-44e6-b38d-002429b6dd63"
         ]
+      }
+    ],
+    "34": [
+      {
+        "id": "a2eaedaa-93be-48ca-9478-a4bcf1899e53",
+        "type": "image",
+        "x": 54.55555555555554,
+        "y": 33.07666651407878,
+        "w": 80.88888888888889,
+        "h": 70.08333333333333,
+        "visible": true,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789685751662-princesa_final_webP.webp"
+      }
+    ],
+    "35": [
+      {
+        "id": "8a6b605c-9210-46f4-8b53-e4dbd9ef7b69",
+        "type": "image",
+        "x": -45.111110263400604,
+        "y": 31.83333206176758,
+        "w": 80.44444444444444,
+        "h": 73.91666666666666,
+        "visible": true,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789685863856-princesa_final_webP.webp"
+      }
+    ],
+    "36": [
+      {
+        "id": "9b221992-e9e0-4e8d-84e8-1813b88183b9",
+        "type": "image",
+        "x": 47.44444444444444,
+        "y": 49.361968815972936,
+        "w": 56.00000000000001,
+        "h": 37.03085904920767,
+        "visible": true,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789686932505-Estrellas_webP.webp"
       },
       {
-        "id": "a279d5b3-ebcd-48f1-a1d7-71914a0982fb",
+        "id": "e01569a0-2f2a-4b53-b9e0-647e2bce3441",
         "type": "image",
-        "x": 12.88888888888889,
-        "y": 72.7089240016094,
-        "w": 22.11111111111111,
-        "h": 23.519599666388658,
+        "x": 15.555555555555555,
+        "y": 55.361137994634205,
+        "w": 40.44444444444444,
+        "h": 34.612176814011676,
+        "visible": true,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789686987246-Anciana_webP.webp"
+      },
+      {
+        "id": "86f64533-2ce6-48a8-999c-bd84c2a1af3b",
+        "type": "image",
+        "x": 44.77777777777778,
+        "y": 57.85738171091469,
+        "w": 31.666666666666664,
+        "h": 36.6138448707256,
+        "visible": true,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789687039752-Mago1_webP.webp"
+      },
+      {
+        "id": "8fd8ae4f-05a5-4054-a495-7df77c8edc40",
+        "type": "image",
+        "x": 58.55555555555556,
+        "y": 23.322770832179486,
+        "w": 43.111111111111114,
+        "h": 30.775646371976645,
+        "visible": true,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789687136428-Estrellas_webP.webp"
+      }
+    ],
+    "37": [
+      {
+        "id": "ce675b7b-92ee-4523-9540-8e056d51dbf3",
+        "type": "image",
+        "x": -0.6666666666666667,
+        "y": 45.608842482260606,
+        "w": 30.22222222222222,
+        "h": 26.35529608006672,
+        "visible": true,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789687216023-Estrellas_webP.webp"
+      },
+      {
+        "id": "f65d6a7e-ad8b-4388-983e-8d591e936e63",
+        "type": "image",
+        "x": 15.666666666666668,
+        "y": 51.10759210149083,
+        "w": 70.66666666666667,
+        "h": 48.95746455379483,
+        "visible": true,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789687251267-Estrellas_webP.webp"
+      },
+      {
+        "id": "56e8b65b-96d9-4128-9b2c-6a6681fc23d8",
+        "type": "image",
+        "x": 3.2222222222222223,
+        "y": 52.35279582757767,
+        "w": 42.22222222222222,
+        "h": 38.61551292743953,
         "visible": false,
         "clickable": true,
         "action": "none",
-        "src": "/pages/fabrica_de_historias/assets/images/1789340354937-Boboth_verde_1_webP.webp"
+        "src": "/pages/fabrica_de_historias/assets/images/1789687799240-Portal_webP.webp"
       },
       {
-        "id": "55e63886-5f8e-4b70-bd34-d45b3c2f58b2",
+        "id": "94140f22-35c0-40f5-b2e8-d18a724ded38",
         "type": "button",
-        "x": 14.648888481987848,
-        "y": 77.52670542399088,
-        "w": 18.88888888888889,
-        "h": 14.083333333333334,
+        "x": 4.666666666666667,
+        "y": 56.18348618762706,
+        "w": 38.44444444444444,
+        "h": 31.359466221851545,
         "visible": true,
         "clickable": true,
         "action": "timedSwap",
         "icon": "🔊",
-        "src": "/pages/fabrica_de_historias/assets/images/1789340411437-Robot_Juguete_Button.webp",
+        "src": "/pages/fabrica_de_historias/assets/images/1789687455359-Portal_Button.webp",
+        "durationMs": 4000,
         "targetIds": [
-          "a279d5b3-ebcd-48f1-a1d7-71914a0982fb"
-        ],
-        "durationMs": 4000
+          "56e8b65b-96d9-4128-9b2c-6a6681fc23d8"
+        ]
       },
       {
-        "id": "deff79d7-ebec-4d74-abe7-65ff6b78dadb",
+        "id": "6045a01d-9884-4b0e-9fcc-05f6470f1cb4",
         "type": "image",
-        "x": -21.982221815321182,
-        "y": 53.759805076414594,
-        "w": 31.444444444444446,
-        "h": 27.856547122602173,
+        "x": 42.77777777777778,
+        "y": 58.09591259928521,
+        "w": 30,
+        "h": 27.939949958298584,
+        "visible": true,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789687504365-Fantasma_webP.webp"
+      }
+    ],
+    "38": [
+      {
+        "id": "1acaffaf-2324-4325-ab0d-b8dca22754a3",
+        "type": "image",
+        "x": 43.22222222222222,
+        "y": 63.29024237727403,
+        "w": 34.11111111111111,
+        "h": 27.689741451209343,
+        "visible": true,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789687873909-Mago2_webP.webp"
+      }
+    ],
+    "39": [
+      {
+        "id": "50993130-2ac6-4561-a561-9a2d9f06537c",
+        "type": "image",
+        "x": -2.0000000000000013,
+        "y": 21.005003406566022,
+        "w": 49.888888888888886,
+        "h": 44.28690575479566,
+        "visible": false,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789687955905-Estrellas_webP.webp"
+      },
+      {
+        "id": "121eb4b5-2447-4dbc-b6ac-e5a580b0fc42",
+        "type": "image",
+        "x": 40.33333333333333,
+        "y": 26.670562515067896,
+        "w": 46.111111111111114,
+        "h": 42.78565471226022,
+        "visible": false,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789687996226-Estrellas_webP.webp"
+      },
+      {
+        "id": "1cc777e5-cfc6-4c81-805a-70afb397197e",
+        "type": "image",
+        "x": 2.4444444444444446,
+        "y": 0.476230751782084,
+        "w": 43.666666666666664,
+        "h": 32.19349457881568,
+        "visible": false,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789688024187-Estrellas_webP.webp"
+      },
+      {
+        "id": "7b953b7f-d37a-45e3-b746-988600106b6b",
+        "type": "image",
+        "x": 42.777777777777786,
+        "y": 0.3035875436561719,
+        "w": 41.55555555555556,
+        "h": 32.11009174311927,
+        "visible": false,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789688050817-Estrellas_webP.webp"
+      },
+      {
+        "id": "47a0ddab-1b3f-4da3-a5ee-ea96e0733453",
+        "type": "image",
+        "x": 28.444444444444443,
+        "y": 4.050872522756593,
+        "w": 38.666666666666664,
+        "h": 26.188490408673893,
+        "visible": false,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789688091458-Jupiter_WebP.webp"
+      },
+      {
+        "id": "e9a302ab-c2be-48aa-9ef5-12a732df08cb",
+        "type": "button",
+        "x": 34.333333333333336,
+        "y": 7.381147141253779,
+        "w": 25.88888888888889,
+        "h": 19.849874895746456,
+        "visible": true,
+        "clickable": true,
+        "action": "timedSwap",
+        "icon": "🔊",
+        "src": "/pages/fabrica_de_historias/assets/images/1789688166108-Jupiter_Button.webp",
+        "targetIds": [
+          "50993130-2ac6-4561-a561-9a2d9f06537c",
+          "121eb4b5-2447-4dbc-b6ac-e5a580b0fc42",
+          "1cc777e5-cfc6-4c81-805a-70afb397197e",
+          "7b953b7f-d37a-45e3-b746-988600106b6b",
+          "47a0ddab-1b3f-4da3-a5ee-ea96e0733453"
+        ],
+        "durationMs": 10000
+      }
+    ],
+    "40": [
+      {
+        "id": "235e130f-2385-4f11-9a7b-52e3847a534f",
+        "type": "image",
+        "x": 36.22222222222222,
+        "y": 79.30358937623801,
+        "w": 26.555555555555554,
+        "h": 20.350291909924938,
+        "visible": false,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789688343472-Posima_webP.webp"
+      },
+      {
+        "id": "76028ae2-6e22-4a42-b327-fa3a54ac6772",
+        "type": "button",
+        "x": 42.333333333333336,
+        "y": 83.80149860397988,
+        "w": 14.444444444444443,
+        "h": 11.259382819015846,
+        "visible": true,
+        "clickable": true,
+        "action": "timedSwap",
+        "icon": "🔊",
+        "src": "/pages/fabrica_de_historias/assets/images/1789688430478-Posima_Button.webp",
+        "targetIds": [
+          "235e130f-2385-4f11-9a7b-52e3847a534f"
+        ],
+        "durationMs": 3000
+      },
+      {
+        "id": "ccdadd53-a49b-44dd-800b-472a24c721e8",
+        "type": "image",
+        "x": 58.111111111111114,
+        "y": 66.36447222457517,
+        "w": 34.44444444444444,
+        "h": 30.275229357798167,
+        "visible": false,
+        "clickable": true,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789688534537-Dragon_triste_webP.webp"
+      },
+      {
+        "id": "867a2edd-87ca-4345-9d8f-9e7fca4a3fd7",
+        "type": "button",
+        "x": 60.111111111111114,
+        "y": 65.44120222255525,
+        "w": 30.666666666666664,
+        "h": 31.77648040033361,
+        "visible": true,
+        "clickable": true,
+        "action": "timedSwap",
+        "icon": "🔊",
+        "src": "/pages/fabrica_de_historias/assets/images/1789688606258-Dragon_Button.webp",
+        "targetIds": [
+          "ccdadd53-a49b-44dd-800b-472a24c721e8"
+        ],
+        "durationMs": 6000
+      },
+      {
+        "id": "871cfc68-339b-41b2-998f-e1d7ea56eb9c",
+        "type": "image",
+        "x": 56.111111111111114,
+        "y": 83.28356516172332,
+        "w": 35.888888888888886,
+        "h": 23.185988323603002,
+        "visible": false,
+        "clickable": true,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789688737190-Llave_magica_webP.webp"
+      },
+      {
+        "id": "f1688d58-678e-4431-9007-3b8e9354db82",
+        "type": "button",
+        "x": 66.22222222222223,
+        "y": 90.53377814845705,
+        "w": 16,
+        "h": 8.507089241034196,
+        "visible": true,
+        "clickable": true,
+        "action": "timedSwap",
+        "icon": "🔊",
+        "src": "/pages/fabrica_de_historias/assets/images/1789688844229-Llave_Button.webp",
+        "targetIds": [
+          "871cfc68-339b-41b2-998f-e1d7ea56eb9c"
+        ],
+        "durationMs": 2000
+      }
+    ],
+    "41": [
+      {
+        "id": "c4190ce2-2490-44c3-b644-0d11ebffe503",
+        "type": "image",
+        "x": 14.555555555555555,
+        "y": 70.29608057577278,
+        "w": 24.333333333333336,
+        "h": 22.351959966638866,
+        "visible": true,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789688945561-Mano_Llave_webP.webp"
+      },
+      {
+        "id": "457c92cf-9ffb-4554-86cd-c86bd10d4a61",
+        "type": "image",
+        "x": 35.55555555555555,
+        "y": 70.79066068953132,
+        "w": 23.11111111111111,
+        "h": 19.76647206005004,
+        "visible": false,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789688977821-Invento_webP.webp"
+      },
+      {
+        "id": "0ad7477c-d221-4b49-8852-4d69cfb87128",
+        "type": "button",
+        "x": 40.555555555555564,
+        "y": 74.95496175605322,
+        "w": 13,
+        "h": 11.426188490408675,
+        "visible": true,
+        "clickable": true,
+        "action": "timedSwap",
+        "icon": "🔊",
+        "src": "/pages/fabrica_de_historias/assets/images/1789689117694-Invento_Button.webp",
+        "durationMs": 6000,
+        "targetIds": [
+          "457c92cf-9ffb-4554-86cd-c86bd10d4a61"
+        ]
+      }
+    ],
+    "42": [
+      {
+        "id": "a45ee3c3-5429-4434-97f3-fa39a0412b0c",
+        "type": "image",
+        "x": -0.7777777777777778,
+        "y": 63.6238537200597,
+        "w": 40.22222222222222,
+        "h": 36.69724770642202,
+        "visible": true,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789689255135-Nino_Asustado_webP.webp"
+      },
+      {
+        "id": "8ce31013-bd71-4396-ae9e-544a0b185b6e",
+        "type": "image",
+        "x": 42.73333062065973,
+        "y": 17.079235137354043,
+        "w": 104.66666666666666,
+        "h": 73.64470391993328,
+        "visible": false,
+        "clickable": true,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789689718747-Violin_webP.webp"
+      },
+      {
+        "id": "a4f7965f-e876-4d05-bb85-b4c5f7f0d5b6",
+        "type": "button",
+        "x": 81.11111111111113,
+        "y": 27.081735084474936,
+        "w": 29.22222222222222,
+        "h": 24.770642201834864,
+        "visible": true,
+        "clickable": true,
+        "action": "timedSwap",
+        "icon": "🔊",
+        "src": "/pages/fabrica_de_historias/assets/images/1789690075799-Violin_1_Button.webp",
+        "targetIds": [
+          "8ce31013-bd71-4396-ae9e-544a0b185b6e"
+        ],
+        "durationMs": 4000
+      }
+    ],
+    "43": [
+      {
+        "id": "879cb787-faf9-4d21-99f4-19e873b7a9cd",
+        "type": "image",
+        "x": -3.5555589463975688,
+        "y": 27.427024300442433,
+        "w": 15.222222222222223,
+        "h": 15.59633027522936,
+        "visible": true,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789690297118-Violin_Parche.webp"
+      },
+      {
+        "id": "97ec8a43-f888-46cf-a5a9-bfa01057dd11",
+        "type": "image",
+        "x": 48.33333333333332,
+        "y": 1.1492935193390321,
+        "w": 28.444444444444443,
+        "h": 21.601334445371144,
+        "visible": false,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789690501779-Violin_Brillo_webP.webp"
+      },
+      {
+        "id": "80e96393-3e19-458d-89ec-7d1b41a505c1",
+        "type": "button",
+        "x": 54.22222222222223,
+        "y": 3.8957470153350444,
+        "w": 16.333333333333332,
+        "h": 14.929107589658047,
+        "visible": true,
+        "clickable": true,
+        "action": "timedSwap",
+        "icon": "🔊",
+        "src": "/pages/fabrica_de_historias/assets/images/1789690542363-Violin_2_Button.webp",
+        "durationMs": 10000,
+        "targetIds": [
+          "97ec8a43-f888-46cf-a5a9-bfa01057dd11"
+        ]
+      },
+      {
+        "id": "4a9d3b2e-bc54-43b4-83a4-03bb9ec8d074",
+        "type": "image",
+        "x": 64.22222222222223,
+        "y": -1.78148334875417,
+        "w": 39.111111111111114,
+        "h": 37.61467889908257,
+        "visible": true,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789690629993-Exploradora_webP.webp"
+      },
+      {
+        "id": "602006e0-7afb-41e6-816c-e814ac668e0c",
+        "type": "image",
+        "x": 57.44444444444444,
+        "y": 60.76480206894417,
+        "w": 42.66666666666667,
+        "h": 42.36864053377815,
+        "visible": true,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789690699346-Nino_webP.webp"
+      }
+    ],
+    "44": [
+      {
+        "id": "96b7c6dc-b22a-4757-bc6b-6e5119c5e802",
+        "type": "image",
+        "x": 47.11111111111111,
+        "y": 42.93995173997537,
+        "w": 26.333333333333332,
+        "h": 20.350291909924938,
+        "visible": false,
+        "clickable": true,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789690895933-Luna_webP.webp"
+      },
+      {
+        "id": "c404e9e1-df75-4f3e-a724-8c6ecd0bb1cd",
+        "type": "button",
+        "x": 48.55555555555556,
+        "y": 43.5179327804909,
+        "w": 24,
+        "h": 19.599666388657212,
+        "visible": true,
+        "clickable": true,
+        "action": "timedSwap",
+        "icon": "🔊",
+        "src": "/pages/fabrica_de_historias/assets/images/1789690929478-Luna_Button.webp",
+        "durationMs": 5000,
+        "targetIds": [
+          "96b7c6dc-b22a-4757-bc6b-6e5119c5e802"
+        ]
+      }
+    ],
+    "45": [
+      {
+        "id": "a1863b09-c8f2-4389-a524-555b45921d04",
+        "type": "image",
+        "x": -21.666666666666668,
+        "y": 71.79733161830822,
+        "w": 31.333333333333336,
+        "h": 27.773144286905755,
+        "visible": false,
+        "clickable": true,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789691036840-Jesus_WebP.webp"
+      },
+      {
+        "id": "72968534-f391-4bdf-a9ee-cddf2de1bbc2",
+        "type": "image",
+        "x": 32.111111111111114,
+        "y": 86.30358367487227,
+        "w": 36.666666666666664,
+        "h": 16.680567139282733,
+        "visible": false,
+        "clickable": true,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789691203878-Huellas_webP.webp"
+      },
+      {
+        "id": "594a31b2-9dda-4a71-929d-ebbba88c6f83",
+        "type": "button",
+        "x": -17.111114501953125,
+        "y": 74.45454219662219,
+        "w": 21.777777777777775,
+        "h": 22.768974145120936,
+        "visible": true,
+        "clickable": true,
+        "action": "timedSwap",
+        "icon": "🔊",
+        "src": "/pages/fabrica_de_historias/assets/images/1789691295435-Jesus_Button.webp",
+        "targetIds": [
+          "a1863b09-c8f2-4389-a524-555b45921d04",
+          "72968534-f391-4bdf-a9ee-cddf2de1bbc2"
+        ],
+        "durationMs": 10000
+      }
+    ],
+    "47": [
+      {
+        "id": "7b5e4b68-3219-42ea-9f05-0338212aa474",
+        "type": "image",
+        "x": -23.666670057508675,
+        "y": 41.02168651895786,
+        "w": 66.66666666666666,
+        "h": 46.28857381150959,
+        "visible": true,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789691477243-Guardian_webP.webp"
+      }
+    ],
+    "48": [
+      {
+        "id": "7e48c9eb-13ff-464b-8686-7010c48d8070",
+        "type": "image",
+        "x": 30.444444444444446,
+        "y": 79.97081078918303,
+        "w": 22.555555555555557,
+        "h": 20.517097581317763,
         "visible": true,
         "clickable": true,
         "action": "none",
-        "src": "/pages/fabrica_de_historias/assets/images/1789344109908-Boboth_1_webP.webp"
+        "src": "/pages/fabrica_de_historias/assets/images/1789691727174-perro_webP.webp"
+      }
+    ],
+    "49": [
+      {
+        "id": "ff41bf41-b9b0-4e8d-b96e-1fd113556f31",
+        "type": "image",
+        "x": 23.11111111111111,
+        "y": 59.5371147709354,
+        "w": 39.111111111111114,
+        "h": 44.37030859049207,
+        "visible": false,
+        "clickable": true,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789692112042-Camila_1_webP.webp"
+      },
+      {
+        "id": "47cfde69-ac96-4cf6-aaad-6802e32728ae",
+        "type": "button",
+        "x": 25.11111111111111,
+        "y": 67.45454662536162,
+        "w": 31.555555555555554,
+        "h": 28.85738115095913,
+        "visible": true,
+        "clickable": true,
+        "action": "timedSwap",
+        "icon": "🔊",
+        "src": "/pages/fabrica_de_historias/assets/images/1789692314349-Camila_Button.webp",
+        "durationMs": 6000,
+        "targetIds": [
+          "ff41bf41-b9b0-4e8d-b96e-1fd113556f31"
+        ]
+      },
+      {
+        "id": "0fae63e0-4d44-48dc-9d10-0c3b89e12733",
+        "type": "image",
+        "x": 7.666666666666669,
+        "y": 77.54044711738948,
+        "w": 31.88888888888889,
+        "h": 24.43703085904921,
+        "visible": true,
+        "clickable": true,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789692401195-Perro_2_webP.webp"
+      }
+    ],
+    "50": [
+      {
+        "id": "efad6f02-ebe2-4f93-95b3-e64eb1656e8b",
+        "type": "image",
+        "x": 43.555555555555564,
+        "y": 69.71226263483729,
+        "w": 26.88888888888889,
+        "h": 18.932443703085905,
+        "visible": true,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789692492337-Gato_1_webP.webp"
+      },
+      {
+        "id": "d4785a6b-d4fb-4b02-9e7e-c7a7c1f13209",
+        "type": "image",
+        "x": 49.22222222222222,
+        "y": 65.11926849848832,
+        "w": 45.55555555555556,
+        "h": 36.03002502085071,
+        "visible": false,
+        "clickable": true,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789692538000-Cofre_webPr.webp"
+      },
+      {
+        "id": "1760e8ab-fbbb-4a0a-ad49-e2bee4beaa3c",
+        "type": "button",
+        "x": 49.22222222222222,
+        "y": 67.03169491014648,
+        "w": 45.44444444444444,
+        "h": 32.443703085904914,
+        "visible": true,
+        "clickable": true,
+        "action": "timedSwap",
+        "icon": "🔊",
+        "src": "/pages/fabrica_de_historias/assets/images/1789692648995-Cofre_Button.webp",
+        "durationMs": 5000,
+        "targetIds": [
+          "d4785a6b-d4fb-4b02-9e7e-c7a7c1f13209"
+        ]
+      }
+    ],
+    "51": [
+      {
+        "id": "e3528c69-8048-4630-878f-f7ac045584e5",
+        "type": "image",
+        "x": 17.77777777777778,
+        "y": 47.026690689099645,
+        "w": 66.44444444444444,
+        "h": 48.20683903252711,
+        "visible": true,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789692712943-Amigos_webP.webp"
+      }
+    ],
+    "52": [
+      {
+        "id": "fc3173bb-368a-47e8-be21-2900a73affc4",
+        "type": "image",
+        "x": 30.22222222222222,
+        "y": 33.18181773639898,
+        "w": 66.66666666666666,
+        "h": 32.610508757297744,
+        "visible": true,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789692836308-Cientifico_webP.webp"
+      }
+    ],
+    "53": [
+      {
+        "id": "35f0018c-bfb0-4bd4-8b02-ac10e66631b6",
+        "type": "image",
+        "x": -11.000003390842014,
+        "y": 34.68306846077785,
+        "w": 48,
+        "h": 37.36447039199333,
+        "visible": false,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789692893244-Mesa_1_webP.webp"
+      },
+      {
+        "id": "7c20e56b-8aac-4304-8ef6-6473fca8b790",
+        "type": "button",
+        "x": -10.44444783528646,
+        "y": 40.34862756927974,
+        "w": 46.44444444444444,
+        "h": 25.771476230191826,
+        "visible": true,
+        "clickable": true,
+        "action": "timedSwap",
+        "icon": "🔊",
+        "src": "/pages/fabrica_de_historias/assets/images/1789692999640-Mesa_Button.webp",
+        "durationMs": 5000,
+        "targetIds": [
+          "35f0018c-bfb0-4bd4-8b02-ac10e66631b6"
+        ]
+      }
+    ],
+    "54": [
+      {
+        "id": "e5651f81-772b-4288-8e56-17975ef05cd9",
+        "type": "image",
+        "x": 52.55555555555554,
+        "y": 67.79399550488037,
+        "w": 33.33333333333333,
+        "h": 25.604670558798997,
+        "visible": false,
+        "clickable": true,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789693261310-Olla_WebP.webp"
+      },
+      {
+        "id": "ca507846-b76a-471d-bac3-35c1b37a1034",
+        "type": "button",
+        "x": 59.77777777777777,
+        "y": 79.46455114776634,
+        "w": 19.444444444444446,
+        "h": 11.259382819015846,
+        "visible": true,
+        "clickable": true,
+        "action": "timedSwap",
+        "icon": "🔊",
+        "src": "/pages/fabrica_de_historias/assets/images/1789693326573-Olla_Button.webp",
+        "durationMs": 3000,
+        "targetIds": [
+          "e5651f81-772b-4288-8e56-17975ef05cd9"
+        ]
+      }
+    ],
+    "55": [
+      {
+        "id": "fe3a48ca-304b-4183-bd8c-54ff1039d91c",
+        "type": "image",
+        "x": -15.888892279730904,
+        "y": 62.4562140203099,
+        "w": 60.111111111111114,
+        "h": 39.199332777314424,
+        "visible": false,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789693430985-Mesa_2_webP.webp"
+      },
+      {
+        "id": "3ba22e05-2884-4192-b679-dd1e35ebbca7",
+        "type": "button",
+        "x": -11.222225613064236,
+        "y": 65.86989911026116,
+        "w": 50.55555555555556,
+        "h": 33.527939949958295,
+        "visible": true,
+        "clickable": true,
+        "action": "timedSwap",
+        "icon": "🔊",
+        "src": "/pages/fabrica_de_historias/assets/images/1789693480140-Mesa_2_Button.webp",
+        "targetIds": [
+          "fe3a48ca-304b-4183-bd8c-54ff1039d91c"
+        ]
+      }
+    ],
+    "56": [
+      {
+        "id": "399e4c7c-f9f5-4922-8909-7ef2342e8787",
+        "type": "image",
+        "x": -2.666666666666667,
+        "y": 52.28106742903429,
+        "w": 39.22222222222223,
+        "h": 31.02585487906589,
+        "visible": false,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789693874542-Naufrago_webP.webp"
+      },
+      {
+        "id": "a1d05d71-8b38-489b-a37f-9808c5712790",
+        "type": "button",
+        "x": 4.444444444444445,
+        "y": 59.19766716404295,
+        "w": 22,
+        "h": 23.853211009174313,
+        "visible": true,
+        "clickable": true,
+        "action": "timedSwap",
+        "icon": "🔊",
+        "src": "/pages/fabrica_de_historias/assets/images/1789693945703-Barco_Button.webp",
+        "targetIds": [
+          "399e4c7c-f9f5-4922-8909-7ef2342e8787"
+        ]
+      },
+      {
+        "id": "8480fa36-f372-49f6-9e45-0b06322d3c68",
+        "type": "image",
+        "x": 34.66666666666667,
+        "y": 62.77815028962937,
+        "w": 43,
+        "h": 25.43786488740617,
+        "visible": true,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789693981302-Pirata_1_webP.webp"
+      }
+    ],
+    "57": [
+      {
+        "id": "aac0e83d-4dce-4867-92d1-008c9eefbf4d",
+        "type": "image",
+        "x": 38,
+        "y": 58.95329492106052,
+        "w": 71.11111111111111,
+        "h": 37.61467889908257,
+        "visible": false,
+        "clickable": true,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789694058693-Cangrejo_webP.webp"
+      },
+      {
+        "id": "69517f14-b49c-4a40-b2b9-cc5d7d0b0e2f",
+        "type": "button",
+        "x": 71,
+        "y": 76.71225756978471,
+        "w": 25.11111111111111,
+        "h": 14.428690575479566,
+        "visible": true,
+        "clickable": true,
+        "action": "timedSwap",
+        "icon": "🔊",
+        "src": "/pages/fabrica_de_historias/assets/images/1789694103968-Cangrejo_Button.webp",
+        "durationMs": 9000,
+        "targetIds": [
+          "aac0e83d-4dce-4867-92d1-008c9eefbf4d"
+        ]
+      },
+      {
+        "id": "60b341db-3fe0-4c29-aecd-384b07e3281c",
+        "type": "image",
+        "x": 40.666666666666664,
+        "y": 72.7030826469975,
+        "w": 24.88888888888889,
+        "h": 24.43703085904921,
+        "visible": true,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789694253502-Targeta_webP.webp"
+      }
+    ],
+    "58": [
+      {
+        "id": "e987489d-fa4b-4ad3-895e-22cd38db87a4",
+        "type": "button",
+        "x": 20.555555555555554,
+        "y": 46.44286956659847,
+        "w": 79.44444444444444,
+        "h": 44.45371142618849,
+        "visible": true,
+        "clickable": true,
+        "action": "toggleTarget",
+        "icon": "🔊",
+        "src": "/pages/fabrica_de_historias/assets/images/1789694334035-Barco_pirata_webP.webp",
+        "fit": "cover",
+        "targetIds": [
+          "3b1a6153-fdf1-4402-9f2e-9b1fe3610bd7"
+        ]
+      },
+      {
+        "id": "3b1a6153-fdf1-4402-9f2e-9b1fe3610bd7",
+        "type": "image",
+        "x": -0.2222222222222222,
+        "y": 59.11426432834654,
+        "w": 35.44444444444444,
+        "h": 24.186822351959965,
+        "visible": false,
+        "clickable": true,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789694383920-Burbujas_webP.webp"
+      }
+    ],
+    "60": [
+      {
+        "id": "ea9710a2-7484-495c-971d-824ce2a9652e",
+        "type": "image",
+        "x": 27,
+        "y": 70.21267901270264,
+        "w": 27.555555555555557,
+        "h": 25.10425354462052,
+        "visible": true,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789694786410-Princesa_Static_1.webp"
+      },
+      {
+        "id": "f4befc9f-fd30-4687-85dd-59d73d078d7a",
+        "type": "image",
+        "x": -1.2222222222222223,
+        "y": 54.6105112007402,
+        "w": 100.1111111111111,
+        "h": 47.87322768974145,
+        "visible": false,
+        "clickable": true,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789694820204-Lluvia_webP.webp"
+      },
+      {
+        "id": "cd6f21c1-b820-4efb-938d-ad9f7b97c4ad",
+        "type": "button",
+        "x": 27,
+        "y": 50.35112673685489,
+        "w": 48.333333333333336,
+        "h": 12.51042535446205,
+        "visible": true,
+        "clickable": true,
+        "action": "timedSwap",
+        "icon": "🔊",
+        "src": "/pages/fabrica_de_historias/assets/images/1789694860328-Lluvia_Button.webp",
+        "targetIds": [
+          "f4befc9f-fd30-4687-85dd-59d73d078d7a"
+        ],
+        "durationMs": 10000
+      }
+    ],
+    "61": [
+      {
+        "id": "02bb91ac-eac9-4eb4-8dc8-d9982575412e",
+        "type": "image",
+        "x": 43.55555555555555,
+        "y": 54.282737712844195,
+        "w": 21.88888888888889,
+        "h": 21.3511259382819,
+        "visible": false,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789694921314-Piedra_magica_webP.webp"
+      },
+      {
+        "id": "52a16272-7ed5-4de3-9b25-7f3ac258c890",
+        "type": "button",
+        "x": 49.77777777777778,
+        "y": 60.61551409825571,
+        "w": 9.11111111111111,
+        "h": 8.84070058381985,
+        "visible": true,
+        "clickable": true,
+        "action": "timedSwap",
+        "icon": "🔊",
+        "src": "/pages/fabrica_de_historias/assets/images/1789694953921-Piedra_Button.webp",
+        "durationMs": 10000,
+        "targetIds": [
+          "02bb91ac-eac9-4eb4-8dc8-d9982575412e"
+        ]
+      },
+      {
+        "id": "1d17e92e-4ead-4b50-881d-0b28da2da6fb",
+        "type": "image",
+        "x": 5.333333333333334,
+        "y": 57.35696596936249,
+        "w": 31.444444444444446,
+        "h": 37.7814845704754,
+        "visible": false,
+        "clickable": true,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789695005206-Ruedas.webp",
+        "fit": "cover"
+      },
+      {
+        "id": "321ed55d-72c5-45e0-9b8f-ede9367eb808",
+        "type": "button",
+        "x": 10.333333333333334,
+        "y": 58.185154244340985,
+        "w": 21.777777777777775,
+        "h": 36.44703919933278,
+        "visible": true,
+        "clickable": true,
+        "action": "timedSwap",
+        "icon": "🔊",
+        "src": "/pages/fabrica_de_historias/assets/images/1789695068696-Ruedas_Mader_Button.webp",
+        "targetIds": [
+          "1d17e92e-4ead-4b50-881d-0b28da2da6fb"
+        ]
+      },
+      {
+        "id": "02575263-5012-4414-8969-6176f1b71d75",
+        "type": "image",
+        "x": 21.444444444444443,
+        "y": 66.60300056769314,
+        "w": 25.88888888888889,
+        "h": 31.77648040033361,
+        "visible": true,
+        "clickable": false,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789695116442-Princesa_static.webp"
+      }
+    ],
+    "62": [],
+    "63": [
+      {
+        "id": "16a9c32b-9962-44cf-9b3f-7462ddbb2db7",
+        "type": "image",
+        "x": -38.33333333333332,
+        "y": 57.618849549917904,
+        "w": 84.22222222222221,
+        "h": 45.20433694745621,
+        "visible": false,
+        "clickable": true,
+        "action": "none",
+        "src": "/pages/fabrica_de_historias/assets/images/1789695389158-Barco_webP.webp",
+        "fit": "cover"
+      },
+      {
+        "id": "d0112ec6-1bfd-4374-9c79-7fb7fb3f74c2",
+        "type": "button",
+        "x": -36.77777777777778,
+        "y": 62.2835746300628,
+        "w": 80.88888888888889,
+        "h": 36.53044203502919,
+        "visible": true,
+        "clickable": true,
+        "action": "timedSwap",
+        "icon": "🔊",
+        "src": "/pages/fabrica_de_historias/assets/images/1789695576500-Barco_Completo_Button.webp",
+        "durationMs": 18000,
+        "targetIds": [
+          "16a9c32b-9962-44cf-9b3f-7462ddbb2db7"
+        ]
       }
     ]
-  }
+  },
+  "revealImages": {
+    "16": "/pages/fabrica_de_historias/assets/images/1789444537971-Imagen_Foto_Izquierda.webp",
+    "17": "/pages/fabrica_de_historias/assets/images/1789445269385-Imagen_Foto_Derecha.webp"
+  },
+  "revealCardBg": "/pages/fabrica_de_historias/assets/images/1789444549530-Textura_bg.webp",
+  "tableOfContents": [
+    {
+      "id": "f5e3eeca-5bbf-4d92-afc5-78bf9a1cf921",
+      "label": "índice",
+      "page": 7
+    },
+    {
+      "id": "f961c371-a39e-46c6-a285-2fdda65ec4bd",
+      "label": "Agradecimientos",
+      "page": 9
+    },
+    {
+      "id": "67e745f9-c9ec-4253-b4dc-0ac32f1a028e",
+      "label": "Presentación",
+      "page": 11
+    },
+    {
+      "id": "9ffe7bb4-8275-4142-b4f4-5c63961179de",
+      "label": "Proyecto",
+      "page": 14
+    },
+    {
+      "id": "74417511-52b6-41f7-a514-e4554fa0a8d0",
+      "label": "Autores",
+      "page": 16
+    },
+    {
+      "id": "07518603-0f7a-4de3-94eb-1f5283b1aff7",
+      "label": "El dragón amistoso y el robot Inventor",
+      "page": 18
+    },
+    {
+      "id": "7f9fe334-c697-4519-bd94-688b3f51a410",
+      "label": "El hilo dorado de la ciudad verde",
+      "page": 20
+    },
+    {
+      "id": "5d04e6dc-17ac-427d-b126-7a00cf91fc18",
+      "label": "El científico loco y el Capicorno",
+      "page": 22
+    },
+    {
+      "id": "ca7aa085-8f7c-4761-afe6-2c78821cb08c",
+      "label": "Bravo, el pirata despistado, y el tesoro del planeta de las mil Luces",
+      "page": 24
+    },
+    {
+      "id": "23a75747-1e49-4bf3-8057-345eb5e1c97f",
+      "label": "Isa y el castillo de los inventos perdidos",
+      "page": 30
+    },
+    {
+      "id": "910c5aa0-6a34-4c1d-b382-070e4f15b05b",
+      "label": "El libro secreto de Júpiter",
+      "page": 36
+    },
+    {
+      "id": "12415ed7-c4d3-4883-ab75-ae901d3072c6",
+      "label": "La princesa ingeniera y la llave mágica",
+      "page": 40
+    },
+    {
+      "id": "823f46de-5edf-4a77-b1e5-d741bff9e53b",
+      "label": "El misterio del violín flotante",
+      "page": 42
+    },
+    {
+      "id": "d0349c6c-60ef-44ab-8048-b2cc7c712ca1",
+      "label": "Jesús, Luna y el guardián de la Ciudad verde",
+      "page": 44
+    },
+    {
+      "id": "37d6d819-3957-4abd-b81d-59f8bad9f26d",
+      "label": "Camila y el tesoro del puerto pirata",
+      "page": 48
+    },
+    {
+      "id": "ac5530ec-5cbd-4716-a11e-81d6a31215f4",
+      "label": "El científico loco y la mesa mágica",
+      "page": 52
+    },
+    {
+      "id": "849e1514-a6dd-4ee0-817f-c50ee452218a",
+      "label": "El pirata despistado y el Castillo de los inventos perdidos",
+      "page": 56
+    },
+    {
+      "id": "c419be61-e188-4705-b881-d87163acfe28",
+      "label": "La princesa ingeniera y el barco de oro",
+      "page": 60
+    },
+    {
+      "id": "fb087357-fa81-40cc-9a58-24096b511f37",
+      "label": "Galería de Arte",
+      "page": 64
+    },
+    {
+      "id": "2bacddb4-ee99-4373-b9c7-01640588d7fc",
+      "label": "Créditos",
+      "page": 66
+    }
+  ]
 }

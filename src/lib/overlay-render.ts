@@ -35,6 +35,7 @@ export function buildOverlayElement(
   el.style.height = `${overlay.h}%`
   el.style.pointerEvents = overlay.clickable ? "auto" : "none"
   el.style.cursor = overlay.clickable ? "pointer" : "default"
+  el.style.zIndex = "5"
   el.style.display = overlay.visible ? (overlay.type === "button" ? "flex" : "block") : "none"
 
   if (overlay.type === "image" && overlay.src) {
@@ -131,4 +132,181 @@ export function buildOverlayElement(
   }
 
   return el
+}
+
+/**
+ * Crea el hotspot de un overlay tipo "reveal" (efecto "equipo"): recorta con
+ * clip-path circular la FOTO COMPLETA de la página (revealImg — misma
+ * composición y tamaño en píxeles que la imagen de fieltro), en el punto
+ * exacto del hotspot, revelando la foto real ahí y mostrando una tarjeta con
+ * nombre/cargo/bio. En dispositivos con mouse se activa con hover; en touch
+ * (tablet/celular, sin mouse) se activa con tap.
+ */
+export function buildRevealHotspot(
+  overlay: PageOverlay,
+  revealImg: HTMLImageElement,
+  pageEl: HTMLElement,
+  cardBgUrl?: string
+): HTMLElement {
+  const hs = document.createElement("div")
+  hs.dataset.overlayId = overlay.id
+  hs.dataset.overlayType = "reveal"
+  hs.style.position = "absolute"
+  hs.style.left = `${overlay.x}%`
+  hs.style.top = `${overlay.y}%`
+  hs.style.width = `${overlay.w}%`
+  hs.style.height = `${overlay.h}%`
+  hs.style.borderRadius = "50%"
+  hs.style.cursor = "pointer"
+  hs.style.background = "transparent"
+  hs.style.zIndex = "5"
+
+  const cx = overlay.x + overlay.w / 2
+  const cy = overlay.y + overlay.h / 2
+  const radiusPct = (Math.max(overlay.w, overlay.h) / 2) * 1.15
+
+  let card: HTMLElement | null = null
+  let open = false
+
+  const closeReveal = () => {
+    revealImg.style.clipPath = "circle(0% at 50% 50%)"
+    revealImg.style.setProperty("-webkit-clip-path", "circle(0% at 50% 50%)")
+    if (card) {
+      card.remove()
+      card = null
+    }
+    open = false
+    hs.removeAttribute("data-reveal-open")
+  }
+
+  const buildCard = () => {
+    // Medimos el tamaño real de la página en pantalla para posicionar la
+    // tarjeta en píxeles: mezclar % con un ancho fijo (230px) era lo que
+    // hacía que en páginas angostas (ej. la izquierda de un libro) la
+    // tarjeta terminara tapando el propio círculo revelado.
+    const rect = pageEl.getBoundingClientRect()
+    const cardWidthPx = Math.min(230, rect.width * 0.62)
+    const marginPx = 10
+    const hotspotCenterXpx = (cx / 100) * rect.width
+    const hotspotCenterYpx = (cy / 100) * rect.height
+    const hotspotRadiusXpx = (overlay.w / 2 / 100) * rect.width
+
+    let leftPx: number
+    if (cx <= 50) {
+      leftPx = hotspotCenterXpx + hotspotRadiusXpx + marginPx
+    } else {
+      leftPx = hotspotCenterXpx - hotspotRadiusXpx - marginPx - cardWidthPx
+    }
+    leftPx = Math.max(4, Math.min(rect.width - cardWidthPx - 4, leftPx))
+
+    let topPx = hotspotCenterYpx - 70
+    topPx = Math.max(4, Math.min(rect.height - 40, topPx))
+
+    const box = document.createElement("div")
+    box.style.position = "absolute"
+    box.style.zIndex = "20"
+    box.style.width = `${cardWidthPx}px`
+    box.style.borderRadius = "14px"
+    box.style.padding = "14px 16px"
+    box.style.boxShadow = "0 8px 32px rgba(0,0,0,.25)"
+    box.style.pointerEvents = "none"
+    box.style.left = `${leftPx}px`
+    box.style.top = `${topPx}px`
+
+    if (cardBgUrl) {
+      // Color sólido de respaldo SIEMPRE presente: si la textura tiene partes
+      // transparentes (común en webp/png) o tarda en cargar, la tarjeta sigue
+      // siendo 100% opaca en vez de dejar ver la página de atrás.
+      box.style.backgroundColor = "#faf6ee"
+      // 100% 100% (estirar) en vez de "cover" (recortar): esta textura es un
+      // diseño de tarjeta completo (con su propio borde), no un patrón plano,
+      // así que necesita verse ENTERO y no un recorte distinto según el
+      // tamaño de cada tarjeta.
+      box.style.backgroundImage = `url(${cardBgUrl})`
+      box.style.backgroundSize = "118% 118%"
+      box.style.backgroundPosition = "center"
+      box.style.backgroundRepeat = "no-repeat"
+    } else {
+      box.style.background = "rgba(255,255,255,.97)"
+    }
+
+    const avatarColor = overlay.avatarColor || "#4a6cf7"
+    const initials = (overlay.name || "").trim().split(/\s+/).map((w) => w[0]).join("").slice(0, 2).toUpperCase()
+
+    const header = document.createElement("div")
+    header.style.cssText = "display:flex;align-items:center;gap:10px;margin-bottom:10px;"
+
+    const avatar = document.createElement("div")
+    avatar.style.cssText = `width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;background:${avatarColor};flex-shrink:0;font-size:14px;`
+    avatar.textContent = initials
+
+    const nameWrap = document.createElement("div")
+    const nameEl = document.createElement("div")
+    nameEl.style.cssText = "font-weight:700;color:#1a1a2e;line-height:1.2;font-size:14px;"
+    nameEl.textContent = overlay.name || ""
+    const roleEl = document.createElement("div")
+    roleEl.style.cssText = `display:inline-block;margin-top:4px;font-size:11px;font-weight:600;color:#fff;background:${avatarColor};border-radius:20px;padding:2px 9px;`
+    roleEl.textContent = overlay.role || ""
+    nameWrap.appendChild(nameEl)
+    nameWrap.appendChild(roleEl)
+
+    header.appendChild(avatar)
+    header.appendChild(nameWrap)
+
+    const divider = document.createElement("div")
+    divider.style.cssText = "height:1px;background:#eee;margin:10px 0;"
+
+    const bioEl = document.createElement("div")
+    bioEl.style.cssText = "font-size:12px;color:#555;line-height:1.55;font-weight:500;"
+    bioEl.textContent = overlay.bio || ""
+
+    box.appendChild(header)
+    box.appendChild(divider)
+    box.appendChild(bioEl)
+    return box
+  }
+
+  const openReveal = () => {
+    if (open) return
+    // Cierra cualquier otro punto de revelado abierto en esta misma página
+    pageEl.querySelectorAll<HTMLElement>("[data-reveal-open]").forEach((el) => {
+      el.dispatchEvent(new Event("forceclose"))
+    })
+    revealImg.style.clipPath = `circle(${radiusPct}% at ${cx}% ${cy}%)`
+    revealImg.style.setProperty("-webkit-clip-path", `circle(${radiusPct}% at ${cx}% ${cy}%)`)
+    open = true
+    hs.setAttribute("data-reveal-open", "true")
+    card = buildCard()
+    pageEl.appendChild(card)
+  }
+
+  hs.addEventListener("forceclose", closeReveal)
+
+  // Dispositivos con mouse real (hover:hover) → se activa al pasar el mouse.
+  // Touch (tablet/celular, sin mouse) → se activa al tocar (tap = toggle).
+  const hasHover =
+    typeof window !== "undefined" && window.matchMedia("(hover: hover) and (pointer: fine)").matches
+
+  if (hasHover) {
+    hs.addEventListener("mouseenter", openReveal)
+    hs.addEventListener("mouseleave", closeReveal)
+  } else {
+    hs.addEventListener("click", (e) => {
+      e.stopPropagation()
+      if (open) {
+        closeReveal()
+      } else {
+        openReveal()
+      }
+    })
+  }
+
+  // Igual que los demás overlays: frenar el gesto antes de que page-flip
+  // lo interprete como el inicio de un giro de página.
+  const stop = (ev: Event) => ev.stopPropagation()
+  hs.addEventListener("mousedown", stop)
+  hs.addEventListener("touchstart", stop, { passive: true })
+  hs.addEventListener("pointerdown", stop)
+
+  return hs
 }

@@ -1,7 +1,7 @@
 // types/overlay.ts
 // Tipos compartidos entre el visor (FlipBook), el editor (/editor) y la API (/api/manifest)
 
-export type OverlayType = "image" | "button"
+export type OverlayType = "image" | "button" | "reveal"
 export type OverlayAction = "none" | "toggleTarget" | "timedSwap" | "link"
 
 export interface PageOverlay {
@@ -39,6 +39,11 @@ export interface PageOverlay {
    *           recortando lo que no entra en vez de encoger el dibujo entero.
    */
   fit?: "contain" | "cover"
+  /** Campos usados solo si type === "reveal" (punto de revelado tipo "equipo"): */
+  name?: string
+  role?: string
+  bio?: string
+  avatarColor?: string
 }
 
 export interface Manifest {
@@ -49,4 +54,14 @@ export interface Manifest {
   basePath: string
   /** Clave = número de página, 1-indexado (coincide con page-001, page-002, ...), como string. */
   overlays?: Record<string, PageOverlay[]>
+  /**
+   * Foto real de esta página (mismo tamaño en píxeles y misma composición que
+   * la imagen de fieltro), revelada con máscara circular a través de los
+   * overlays tipo "reveal" de esa misma página. Misma clave que overlays.
+   */
+  revealImages?: Record<string, string>
+  /** Imagen de textura de fondo para TODAS las tarjetas de bio del libro (opcional). */
+  revealCardBg?: string
+  /** Índice/tabla de contenidos del libro: entradas con título y a qué página saltar. */
+  tableOfContents?: { id: string; label: string; page: number }[]
 }

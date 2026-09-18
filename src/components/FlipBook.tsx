@@ -10,7 +10,7 @@
 import { useEffect, useRef, useState, useCallback } from "react"
 import type { SizeType } from "page-flip"
 import type { Manifest } from "@/types/overlay"
-import { buildOverlayElement, createOverlayRegistry } from "@/lib/overlay-render"
+import { buildOverlayElement, buildRevealHotspot, createOverlayRegistry } from "@/lib/overlay-render"
 
 interface FlipBookProps {
   manifest: string
@@ -52,6 +52,7 @@ export default function FlipBook({ manifest: manifestUrl, title }: FlipBookProps
   const [zoomIdx, setZoomIdx]         = useState(0)
   const [isFullscreen, setIsFullscreen] = useState(false)
   const [isMuted, setIsMuted]           = useState(false)
+  const [tocOpen, setTocOpen]           = useState(false)
   
   const isMutedRef = useRef(false)
   const audioFlip = useRef<HTMLAudioElement | null>(null)
@@ -211,6 +212,11 @@ export default function FlipBook({ manifest: manifestUrl, title }: FlipBookProps
         autoSize:            false,
         maxShadowOpacity:    0.5,
         mobileScrollSupport: false,
+        // Desactiva la esquina "sensible" que gana el clic contra overlays
+        // ubicados cerca del borde (ej: un botón en la esquina inferior).
+        // El arrastre normal para pasar de página en cualquier otra parte
+        // de la hoja sigue funcionando igual.
+        showPageCorners:     false,
       })
 
       // Registro compartido por todas las páginas de este init: permite que
@@ -236,9 +242,29 @@ export default function FlipBook({ manifest: manifestUrl, title }: FlipBookProps
 
         div.appendChild(img)
 
+        // Foto real de esta página (mismo tamaño/composición que la imagen de
+        // fieltro), revelada por los hotspots tipo "reveal" con clip-path.
+        const revealSrc = manifest.revealImages?.[String(n)]
+        let revealImg: HTMLImageElement | null = null
+        if (revealSrc) {
+          revealImg = document.createElement("img")
+          revealImg.src = revealSrc
+          revealImg.draggable = false
+          revealImg.alt = ""
+          revealImg.style.cssText =
+            "position:absolute;inset:0;width:100%;height:100%;object-fit:fill;display:block;" +
+            "clip-path:circle(0% at 50% 50%);-webkit-clip-path:circle(0% at 50% 50%);" +
+            "transition:clip-path .35s cubic-bezier(.34,1.4,.64,1);pointer-events:none;"
+          div.appendChild(revealImg)
+        }
+
         const pageOverlays = manifest.overlays?.[String(n)]
         pageOverlays?.forEach(overlay => {
-          div.appendChild(buildOverlayElement(overlay, overlayRegistry))
+          if (overlay.type === "reveal" && revealImg) {
+            div.appendChild(buildRevealHotspot(overlay, revealImg, div, manifest.revealCardBg))
+          } else {
+            div.appendChild(buildOverlayElement(overlay, overlayRegistry))
+          }
         })
 
         bookEl.current!.appendChild(div)
@@ -428,6 +454,16 @@ export default function FlipBook({ manifest: manifestUrl, title }: FlipBookProps
     setZoomIdx(0)
   }, [])
 
+  const goToTocPage = useCallback((page: number) => {
+    const totalPages = manifest?.pages ?? 1
+    const idx = Math.max(0, Math.min(totalPages - 1, page - 1))
+    flipRef.current?.turnToPage(idx)
+    setCurrentPage(idx)
+    setIsCoverView(idx === 0)
+    setZoomIdx(0)
+    setTocOpen(false)
+  }, [manifest])
+
   const totalPages       = manifest?.pages ?? 0
   const displayPage      = currentPage + 1
   const isFirstPage      = currentPage === 0
@@ -464,6 +500,12 @@ export default function FlipBook({ manifest: manifestUrl, title }: FlipBookProps
         ? <><path d="M1 5h3l4-3v11l-4-3H1z"/><path d="M13 5l-4 5M9 5l4 5"/></>
         : <><path d="M1 5h3l4-3v11l-4-3H1z"/><path d="M11 4a5 5 0 010 7"/><path d="M13 2a8 8 0 010 11"/></>
       }
+    </svg>
+  )
+
+  const IconList = () => (
+    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
+      <path d="M1 3h13M1 7.5h13M1 12h13"/>
     </svg>
   )
 
@@ -664,6 +706,16 @@ export default function FlipBook({ manifest: manifestUrl, title }: FlipBookProps
         <div className={`flex items-center gap-2 ${isMobile ? "" : "flex-1 justify-end"}`}>
 
           <button
+            onClick={() => setTocOpen(true)}
+            disabled={!manifest?.tableOfContents?.length}
+            className="w-9 h-9 flex items-center justify-center rounded-xl border border-white/10 bg-white/5 text-gray-400 hover:bg-white/15 hover:text-white active:bg-blue-600 active:text-white disabled:opacity-30 transition-all"
+            aria-label="Índice"
+            title="Índice"
+          >
+            <IconList />
+          </button>
+
+          <button
             onClick={() => setIsMuted(m => !m)}
             className={`w-9 h-9 flex items-center justify-center rounded-xl border transition-all ${
               isMuted
@@ -691,6 +743,70 @@ export default function FlipBook({ manifest: manifestUrl, title }: FlipBookProps
 
         </div>
       </nav>
+
+      {tocOpen && (
+        <>
+          {/* Backdrop: clic afuera cierra el panel sin navegar */}
+          <div
+            className="fixed inset-0 bg-black/50 z-40"
+            onClick={() => setTocOpen(false)}
+          />
+
+          {isMobileOrTablet ? (
+            // Bottom sheet: sube desde abajo, cómodo para tocar con el dedo
+            <div className="fixed inset-x-0 bottom-0 z-50 bg-[#161616] border-t border-white/10 rounded-t-2xl max-h-[60vh] flex flex-col">
+              <div className="flex items-center justify-between px-5 py-4 border-b border-white/10">
+                <span className="text-sm font-semibold uppercase tracking-wider text-gray-300">Índice</span>
+                <button
+                  onClick={() => setTocOpen(false)}
+                  className="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-white/10 active:bg-blue-600 text-gray-400 hover:text-white transition-all"
+                  aria-label="Cerrar índice"
+                >
+                  ✕
+                </button>
+              </div>
+              <div className="overflow-y-auto px-3 py-2">
+                {manifest?.tableOfContents?.map((entry) => (
+                  <button
+                    key={entry.id}
+                    onClick={() => goToTocPage(entry.page)}
+                    className="w-full flex items-center justify-between gap-3 text-left px-3 py-3.5 rounded-xl hover:bg-white/10 active:bg-blue-600 transition-all"
+                  >
+                    <span className="text-[15px]">{entry.label}</span>
+                    <span className="text-xs text-gray-500 font-mono shrink-0">pág. {entry.page}</span>
+                  </button>
+                ))}
+              </div>
+            </div>
+          ) : (
+            // Dropdown: se despliega hacia arriba desde el botón, en desktop
+            <div className="fixed bottom-32 right-6 md:right-16 z-50 w-72 bg-[#161616] border border-white/10 rounded-2xl shadow-2xl overflow-hidden">
+              <div className="flex items-center justify-between px-4 py-3 border-b border-white/10">
+                <span className="text-xs font-semibold uppercase tracking-wider text-gray-300">Índice</span>
+                <button
+                  onClick={() => setTocOpen(false)}
+                  className="w-6 h-6 flex items-center justify-center rounded hover:bg-white/10 active:bg-blue-600 text-gray-400 hover:text-white transition-all"
+                  aria-label="Cerrar índice"
+                >
+                  ✕
+                </button>
+              </div>
+              <div className="max-h-80 overflow-y-auto py-1.5">
+                {manifest?.tableOfContents?.map((entry) => (
+                  <button
+                    key={entry.id}
+                    onClick={() => goToTocPage(entry.page)}
+                    className="w-full flex items-center justify-between gap-3 text-left px-4 py-2.5 hover:bg-white/10 active:bg-blue-600 transition-all"
+                  >
+                    <span className="text-sm">{entry.label}</span>
+                    <span className="text-[11px] text-gray-500 font-mono shrink-0">pág. {entry.page}</span>
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+        </>
+      )}
     </div>
   )
 }
