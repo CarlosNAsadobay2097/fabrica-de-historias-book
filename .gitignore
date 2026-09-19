@@ -40,5 +40,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# pdfs (archivos fuente pesados, no hace falta versionarlos)
-*.pdf
+# PDF fuente pesado en la raiz de public/ (GitHub rechaza archivos >100MB).
+# Acotado SOLO a la raiz: los PDFs que subes desde el editor viven en
+# public/pages/**/assets/downloads/ y ESOS si deben subirse al repo.
+/public/*.pdf
