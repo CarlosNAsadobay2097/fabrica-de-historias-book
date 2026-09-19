@@ -7,7 +7,7 @@ export const runtime = "nodejs"
 
 // MVP: mismo libro fijo que /api/manifest. Cuando pasemos a multi-libro,
 // el bookId viaja en la request y esto arma la ruta dinámicamente.
-const BOOK_ID = "librovirtualdemo2"
+const BOOK_ID = "fabrica_de_historias"
 
 const IMAGE_TYPES = ["image/webp", "image/gif", "image/png", "image/jpeg"]
 const AUDIO_TYPES = ["audio/mpeg", "audio/mp3", "audio/wav", "audio/ogg", "audio/webm"]
