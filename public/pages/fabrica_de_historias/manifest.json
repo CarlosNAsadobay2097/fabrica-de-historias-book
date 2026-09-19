@@ -5,7 +5,7 @@
   "format": "webp",
   "scale": 2,
   "quality": 85,
-  "generated": "2026-09-18T22:54:21.130Z",
+  "generated": "2026-09-19T15:03:13.989Z",
   "basePath": "/pages/fabrica_de_historias",
   "overlays": {
     "1": [
@@ -190,8 +190,8 @@
       {
         "id": "d497b781-a016-4697-9d40-c8ed4fb6b9c9",
         "type": "reveal",
-        "x": 27.44444444444445,
-        "y": 44.41784372719454,
+        "x": 25.444444444444446,
+        "y": 44.084510393861194,
         "w": 15.333333333333332,
         "h": 12.67723102585488,
         "visible": true,
@@ -1975,8 +1975,8 @@
     ]
   },
   "revealImages": {
-    "16": "/pages/fabrica_de_historias/assets/images/1789444537971-Imagen_Foto_Izquierda.webp",
-    "17": "/pages/fabrica_de_historias/assets/images/1789445269385-Imagen_Foto_Derecha.webp"
+    "16": "/pages/librovirtualdemo2/assets/images/1789844810417-Autores_izquierda.webp",
+    "17": "/pages/librovirtualdemo2/assets/images/1789844834667-Autores_derecha.webp"
   },
   "revealCardBg": "/pages/fabrica_de_historias/assets/images/1789444549530-Textura_bg.webp",
   "tableOfContents": [
@@ -2081,5 +2081,5 @@
       "page": 66
     }
   ],
-  "downloadPdfUrl": "/pages/fabrica_de_historias/assets/downloads/1789772410974-fabrica_de_historias__Descargar.pdf"
+  "downloadPdfUrl": "/pages/librovirtualdemo2/assets/downloads/1789830295933-fabrica_de_historias__Descargar.pdf"
 }
