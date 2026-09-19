@@ -8,7 +8,12 @@
  */
 
 import { useEffect, useRef, useState, useCallback } from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { library } from "@fortawesome/fontawesome-svg-core"
+import { faDownload } from "@fortawesome/free-solid-svg-icons"
 import type { SizeType } from "page-flip"
+
+library.add(faDownload)
 import type { Manifest } from "@/types/overlay"
 import { buildOverlayElement, buildRevealHotspot, buildVideoElement, createOverlayRegistry, pauseAllAudio, pauseAllVideos } from "@/lib/overlay-render"
 
@@ -758,7 +763,7 @@ export default function FlipBook({ manifest: manifestUrl, title }: FlipBookProps
           aria-label="Descargar PDF"
           title="Descargar PDF"
         >
-          <span className="text-base">⬇️</span>
+          <FontAwesomeIcon icon={faDownload} className="text-base" />
           {!isMobile && <span>Descargar PDF</span>}
         </a>
       )}
