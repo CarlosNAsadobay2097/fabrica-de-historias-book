@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "NG Flipbook",
+  title: "Fabrica de Historias",
   description: "Visor de PDF tipo libro",
 };
 
