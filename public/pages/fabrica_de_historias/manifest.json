@@ -5,7 +5,7 @@
   "format": "webp",
   "scale": 2,
   "quality": 85,
-  "generated": "2026-09-22T01:53:52.561Z",
+  "generated": "2026-09-23T16:37:46.518Z",
   "basePath": "/pages/fabrica_de_historias",
   "overlays": {
     "1": [
@@ -130,14 +130,14 @@
       {
         "id": "859310b3-6389-4a7e-9283-b996ca51e710",
         "type": "reveal",
-        "x": -1.2222222222222223,
-        "y": 47.44370359495543,
+        "x": -1.3333333333333335,
+        "y": 47.52710643065184,
         "w": 14.888888888888888,
         "h": 12.01000834028357,
         "visible": true,
         "clickable": true,
         "action": "none",
-        "name": "Karina Maribel Castillos Pinos",
+        "name": "Karina Maribel Castillo Pinos",
         "role": "Licenciada en Psicología Educativa y Magíster en Educación Inclusiva e Intercultural",
         "bio": "Es una profesional ecuatoriana, Licenciada en Psicología Educativa y Magíster en Educación Inclusiva e Intercultural. Actualmente cursa su doctorado y se desempeña como docente investigadora en la UNAE. Cuenta con amplia experiencia en docencia, proyectos de investigación e innovación, ponencias y publicaciones indexadas.",
         "avatarColor": "#409184"
@@ -2081,5 +2081,5 @@
       "page": 66
     }
   ],
-  "downloadPdfUrl": "/pages/fabrica_de_historias/assets/downloads/1790042073772-fabrica_de_historias__Descargar.pdf"
+  "downloadPdfUrl": "/pages/fabrica_de_historias/assets/downloads/1790181567332-fabrica_de_historias__Descargar.pdf"
 }
